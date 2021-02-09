@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SoulSY&#39;s story</title>
+    <link>https://soulsy.github.io/kr/</link>
+    <description>Recent content on SoulSY&#39;s story</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 10 Feb 2021 00:30:05 +0900</lastBuildDate>
+    
+	<atom:link href="https://soulsy.github.io/kr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>처음</title>
+      <link>https://soulsy.github.io/kr/post/1/</link>
+      <pubDate>Wed, 10 Feb 2021 00:30:05 +0900</pubDate>
+      
+      <guid>https://soulsy.github.io/kr/post/1/</guid>
+      <description>무언가를 채우기 위해 일단 아무말이나 채워넣기.
+나중에 전부 다 뜯어 고치거나 지울 예정이지만
+글 하나 써두는 것이 나중을 위한 큰 첫 걸음이 되겠지.
+마크다운이나 기타 블로그 관련 기술들도 알아봐야겠다.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://soulsy.github.io/kr/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/kr/search/</guid>
+      <description>search</description>
+    </item>
+    
+    <item>
+      <title>Archive</title>
+      <link>https://soulsy.github.io/kr/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/kr/archives/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

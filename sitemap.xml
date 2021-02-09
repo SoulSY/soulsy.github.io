@@ -1,28 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>http://soulsy.github.io/post/</loc>
-    <lastmod>2021-02-08T01:50:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://soulsy.github.io/</loc>
-    <lastmod>2021-02-08T01:50:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://soulsy.github.io/post/test1/</loc>
-    <lastmod>2021-02-08T01:50:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://soulsy.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>http://soulsy.github.io/tags/</loc>
-  </url>
-  
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>https://soulsy.github.io/en/sitemap.xml</loc>
+		
+	   	<lastmod>2021-02-10T00:30:05+09:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://soulsy.github.io/kr/sitemap.xml</loc>
+		
+	   	<lastmod>2021-02-10T00:30:05+09:00</lastmod>
+		
+	</sitemap>
+	
+</sitemapindex>

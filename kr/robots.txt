@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://soulsy.github.io/sitemap.xml

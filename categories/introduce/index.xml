@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>introduce on SoulSY&#39;s story</title>
+    <link>https://soulsy.github.io/categories/introduce/</link>
+    <description>Recent content in introduce on SoulSY&#39;s story</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 10 Feb 2021 00:30:05 +0900</lastBuildDate>
+    
+	<atom:link href="https://soulsy.github.io/categories/introduce/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First try</title>
+      <link>https://soulsy.github.io/post/1/</link>
+      <pubDate>Wed, 10 Feb 2021 00:30:05 +0900</pubDate>
+      
+      <guid>https://soulsy.github.io/post/1/</guid>
+      <description>My first try is writing something to fill this.
+I think this post would be modified or removed later.
+But this makes me take a one step towards.
+Needs taking a look for markdown, attaching images, etc.</description>
+    </item>
+    
+  </channel>
+</rss>
