@@ -3,8 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://soulsy.github.io/kr/post/monthly_reports/stock_monthly_01_2021/</loc>
+    <lastmod>2021-02-11T00:05:24+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://soulsy.github.io/post/monthly_reports/stock_monthly_01_2021/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://soulsy.github.io/kr/post/monthly_reports/stock_monthly_01_2021/"
+                />
+  </url>
+  
+  <url>
     <loc>https://soulsy.github.io/kr/categories/</loc>
-    <lastmod>2021-02-10T00:30:05+09:00</lastmod>
+    <lastmod>2021-02-11T00:05:24+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,7 +34,7 @@
   
   <url>
     <loc>https://soulsy.github.io/kr/post/</loc>
-    <lastmod>2021-02-10T00:30:05+09:00</lastmod>
+    <lastmod>2021-02-11T00:05:24+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -33,8 +48,23 @@
   </url>
   
   <url>
+    <loc>https://soulsy.github.io/kr/series/</loc>
+    <lastmod>2021-02-11T00:05:24+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://soulsy.github.io/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://soulsy.github.io/kr/series/"
+                />
+  </url>
+  
+  <url>
     <loc>https://soulsy.github.io/kr/</loc>
-    <lastmod>2021-02-10T00:30:05+09:00</lastmod>
+    <lastmod>2021-02-11T00:05:24+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -49,7 +79,7 @@
   
   <url>
     <loc>https://soulsy.github.io/kr/tags/</loc>
-    <lastmod>2021-02-10T00:30:05+09:00</lastmod>
+    <lastmod>2021-02-11T00:05:24+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -63,8 +93,38 @@
   </url>
   
   <url>
-    <loc>https://soulsy.github.io/kr/categories/%EC%86%8C%EA%B0%9C/</loc>
-    <lastmod>2021-02-10T00:30:05+09:00</lastmod>
+    <loc>https://soulsy.github.io/kr/series/%EC%9B%94%EA%B0%84-%EC%A3%BC%EC%8B%9D-%EB%A6%AC%ED%8F%AC%ED%8A%B8/</loc>
+    <lastmod>2021-02-11T00:05:24+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://soulsy.github.io/kr/tags/%EC%9B%94%EA%B0%84%EB%A6%AC%ED%8F%AC%ED%8A%B8/</loc>
+    <lastmod>2021-02-11T00:05:24+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://soulsy.github.io/kr/tags/%EC%A3%BC%EC%8B%9D/</loc>
+    <lastmod>2021-02-11T00:05:24+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://soulsy.github.io/kr/categories/%ED%88%AC%EC%9E%90/</loc>
+    <lastmod>2021-02-11T00:05:24+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://soulsy.github.io/kr/post/monthly_reports/stock_monthly_overview/</loc>
+    <lastmod>2021-02-10T19:52:25+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://soulsy.github.io/post/monthly_reports/stock_monthly_overview/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://soulsy.github.io/kr/post/monthly_reports/stock_monthly_overview/"
+                />
   </url>
   
   <url>
@@ -78,17 +138,17 @@
   </url>
   
   <url>
-    <loc>https://soulsy.github.io/kr/post/1/</loc>
+    <loc>https://soulsy.github.io/kr/post/first/</loc>
     <lastmod>2021-02-10T00:30:05+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://soulsy.github.io/post/1/"
+                href="https://soulsy.github.io/post/first/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="kr"
-                href="https://soulsy.github.io/kr/post/1/"
+                href="https://soulsy.github.io/kr/post/first/"
                 />
   </url>
   
@@ -117,20 +177,6 @@
                 rel="alternate"
                 hreflang="kr"
                 href="https://soulsy.github.io/kr/archives/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://soulsy.github.io/kr/series/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://soulsy.github.io/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="https://soulsy.github.io/kr/series/"
                 />
   </url>
   

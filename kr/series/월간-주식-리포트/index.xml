@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>월간 주식 리포트 on SoulSY&#39;s story</title>
+    <link>https://soulsy.github.io/kr/series/%EC%9B%94%EA%B0%84-%EC%A3%BC%EC%8B%9D-%EB%A6%AC%ED%8F%AC%ED%8A%B8/</link>
+    <description>Recent content in 월간 주식 리포트 on SoulSY&#39;s story</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 11 Feb 2021 00:05:24 +0900</lastBuildDate>
+    
+	<atom:link href="https://soulsy.github.io/kr/series/%EC%9B%94%EA%B0%84-%EC%A3%BC%EC%8B%9D-%EB%A6%AC%ED%8F%AC%ED%8A%B8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2021년 1월 월간리포트</title>
+      <link>https://soulsy.github.io/kr/post/monthly_reports/stock_monthly_01_2021/</link>
+      <pubDate>Thu, 11 Feb 2021 00:05:24 +0900</pubDate>
+      
+      <guid>https://soulsy.github.io/kr/post/monthly_reports/stock_monthly_01_2021/</guid>
+      <description>2021년 첫 리포트. 코스피 지수보다 높은 수익률을 기록해서 만족스럽다.
+ 2월 보고서부터는 좀 더 자세한 비교가 필요할 듯 하다. 전략이 1월에는 1개지만 2월부터는 4개의 전략을 운용하기 때문.
+ 한 달에 6% 수익이면 꽤 괜찮은 성능이라고 생각한다. 초심자의 운이 적용된 듯.
+   High Close MDD     9.53% 5.87% 3.05%    </description>
+    </item>
+    
+    <item>
+      <title>월간 리포트</title>
+      <link>https://soulsy.github.io/kr/post/monthly_reports/stock_monthly_overview/</link>
+      <pubDate>Wed, 10 Feb 2021 19:52:25 +0900</pubDate>
+      
+      <guid>https://soulsy.github.io/kr/post/monthly_reports/stock_monthly_overview/</guid>
+      <description>젠포트1플랫폼을 통해 시스템 트레이딩을 하게된 주된 원인은 커리어 관점에서 내 역량을 좀 더 개발하는데 집중하기 위해서였다.
+ 아이러니하게도 지금은 오히려 시스템 트레이딩을 잘하기 위한 공부에 집중하고 있다. 물론 컴퓨터 보안이나 프로그래밍 스킬, IT 관련 정보 등에 대한 포스팅도 할 수 있다.
+ 하지만 한동안은 투자 관련한 포스팅을 올릴 것 같다. 이 포스팅은 내 자산 중 주식 투자에 관한 월간 리포트 소개 글이다.
+ 현재 주식, 암호화폐, IRP, KASA2이렇게 4 종류의 자산에 투자 중이다.</description>
+    </item>
+    
+  </channel>
+</rss>

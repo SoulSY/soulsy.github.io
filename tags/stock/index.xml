@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stock on SoulSY&#39;s story</title>
+    <link>https://soulsy.github.io/tags/stock/</link>
+    <description>Recent content in stock on SoulSY&#39;s story</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 11 Feb 2021 00:05:21 +0900</lastBuildDate>
+    
+	<atom:link href="https://soulsy.github.io/tags/stock/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Monthly Report Jan 2021</title>
+      <link>https://soulsy.github.io/post/monthly_reports/stock_monthly_01_2021/</link>
+      <pubDate>Thu, 11 Feb 2021 00:05:21 +0900</pubDate>
+      
+      <guid>https://soulsy.github.io/post/monthly_reports/stock_monthly_01_2021/</guid>
+      <description>This is my first report on 2021. I really satisfied that my strategy beat KOSPI1.
+ From the report on Feb 2021, more detailed analysis would be posted because the number of strategies extended 4.
+ It gave me very good performence about 6% in a month. Beginner&amp;rsquo;s luck was applied to me.
+   High Close MDD     9.53% 5.87% 3.05%      KOSPI is Korea benchmark like S&amp;amp;P 500.</description>
+    </item>
+    
+    <item>
+      <title>About Monthly Reports</title>
+      <link>https://soulsy.github.io/post/monthly_reports/stock_monthly_overview/</link>
+      <pubDate>Wed, 10 Feb 2021 19:52:23 +0900</pubDate>
+      
+      <guid>https://soulsy.github.io/post/monthly_reports/stock_monthly_overview/</guid>
+      <description>The reason why I started system trading with GenPort1platform was to develope my skills as learning other things.
+ Ironically, however, now I have been focusing to learn how to do this better. Of course, I can post any other things about computer security, programming skills and IT Tech, etc.
+ But for now, I think I would post this kind of things quite some times.
+This is an overview for monthly report of my stock asset.</description>
+    </item>
+    
+  </channel>
+</rss>
