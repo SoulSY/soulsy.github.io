@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>creator pattern on SoulSY&#39;s SamTech</title>
+    <link>https://soulsy.github.io/ko/tags/creator-pattern/</link>
+    <description>Recent content in creator pattern on SoulSY&#39;s SamTech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/tags/creator-pattern/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>생성 패턴 01. Factory Pattern</title>
+      <link>https://soulsy.github.io/ko/dev/design_pattern/faactory_pattern/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/dev/design_pattern/faactory_pattern/</guid>
+      <description>Factory 패턴 Factory 패턴은 객체 생성을 캡슐화하여 유연성과 확장성을 제공하는 디자인 패턴입니다. 이 패턴은 클라이언트에게 직접 객체 생성을 맡기지 않고, 팩토리 메서드를 통해 객체를 생성하고 반환하는 방식을 사용합니다.
+Factory 패턴의 개요 Factory 패턴은 클라이언트가 객체를 생성하는 대신, 팩토리 메서드를 호출하여 객체를 생성하고 반환합니다. 이를 통해 클라이언트는 객체 생성과 관련된 복잡한 로직을 알 필요 없이, 팩토리 메서드를 통해 쉽게 객체를 생성할 수 있습니다.
+// 동물 인터페이스 public interface Animal { void makeSound(); } // 고양이 클래스 public class Cat implements Animal { @Override public void makeSound() { System.</description>
+    </item>
+    
+  </channel>
+</rss>
