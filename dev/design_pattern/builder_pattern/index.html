@@ -1,0 +1,423 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Pattern 04. Builder Pattern - SamTech</title>
+
+    
+    <meta name="description" content="understanding the Builder Pattern" />
+    
+
+    
+
+    
+    <meta name="author" content="soulsy" />
+    
+
+    
+        <meta property="og:title" content="Design Pattern 04. Builder Pattern" />
+<meta property="og:description" content="understanding the Builder Pattern" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://soulsy.github.io/dev/design_pattern/builder_pattern/" /><meta property="article:section" content="dev" />
+<meta property="article:published_time" content="2023-06-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-06-19T00:00:00+00:00" />
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Design Pattern 04. Builder Pattern"/>
+<meta name="twitter:description" content="understanding the Builder Pattern"/>
+
+    <link rel="stylesheet" href="/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+    <link rel="stylesheet" href="/lib/css/prism.min.6226f06f992e0d6166b0e26724efd050dcc381202a752892ba523b1b865de2ea5e427f8f7d10de682fc35d6e7444018247d1f25db5e1e3bab17068ce191c5886.css" integrity="sha512-Yibwb5kuDWFmsOJnJO/QUNzDgSAqdSiSulI7G4Zd4upeQn&#43;PfRDeaC/DXW50RAGCR9HyXbXh47qxcGjOGRxYhg==">
+
+
+        
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1JSCNZBFBL"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-1JSCNZBFBL', { 'anonymize_ip': false });
+}
+</script>
+
+    
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="/js/zooming.684b5d075bf94d0adfa21a7e7eb9acec1ddfb2e7b47d6657981617f0db0cf50949f1172801595afa3051f51b28d67f6a2d0c41be677b59b564307d9dbe4a4fd2.js" integrity="sha512-aEtdB1v5TQrfohp&#43;frms7B3fsue0fWZXmBYX8NsM9QlJ8RcoAVla&#43;jBR9Rso1n9qLQxBvmd7WbVkMH2dvkpP0g=="></script>
+
+
+
+
+
+
+
+    
+        
+
+        
+        
+
+        
+        
+            
+        
+
+        <script defer src="/js/prism.c16efe6b4f0ae7df5f934ad76ec45633d61b926e66c11dae8f2f56f5e6fc27ba412a3f88ba617f8436480ac928ca3fbc0c3cdee84992a64130d42ea551dad860.js" integrity="sha512-wW7&#43;a08K599fk0rXbsRWM9Ybkm5mwR2ujy9W9eb8J7pBKj&#43;IumF/hDZICskoyj&#43;8DDze6EmSpkEw1C6lUdrYYA==" data-manual></script>
+    
+
+
+
+    
+    
+    
+    <script defer src="/js/search-en.1673d4830ee4ce3c4c87a23698a8ec40e83a1819e6bc44d78ac9480cb517dc925b6ab17a1f1f69dd606c493532b730fad074346ee994b35d4a2f31123fad072b.js" integrity="sha512-FnPUgw7kzjxMh6I2mKjsQOg6GBnmvETXislIDLUX3JJbarF6Hx9p3WBsSTUytzD60HQ0bumUs11KLzESP60HKw=="></script>
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
+        </div>
+
+        <div>
+            <a href="/">SamTech</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
+        
+            <div id="search_tool">
+                <svg id="search_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></svg><div id="search_menu_wrapper" class="hidden">
+    <div id="search_menu">
+        <div id="search_menu_toolbar">
+            <div id="search_menu_input_wrapper">
+                <input id="search_menu_input" type="text" placeholder='Search Posts'>
+            </div>
+            <div id="search_menu_close_btn">
+                <svg width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></svg>
+            </div>
+        </div>
+        <div id="search_menu_results">
+        </div>
+    </div>
+</div>
+</div>
+        
+
+        
+            <div id="translation_tool" class="dropdown-wrapper pure-menu pure-menu-horizontal toolbox-btn">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <div class="dropdown-btn pure-menu-link">
+                            <svg width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></svg>
+                            <span class="dropdown-desc">English</span>
+                        </div>
+                        <ul class="pure-menu-children">
+                            
+                            <li class="pure-menu-item">
+                                <a href="https://soulsy.github.io/" class="pure-menu-link">English</a>
+                            </li>
+                            
+                            <li class="pure-menu-item">
+                                <a href="https://soulsy.github.io/ko/" class="pure-menu-link">한글</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/about/" class="pure-menu-link">About</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/news/" class="pure-menu-link">News</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="/dev/" class="pure-menu-link">Dev</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/knowledge/" class="pure-menu-link">Knowledge</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="/about/">About</a>
+                </li><li>
+                    <a href="/news/">News</a>
+                </li><li>
+                    <a href="/dev/">Dev</a>
+                </li><li>
+                    <a href="/knowledge/">Knowledge</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#advantages">Advantages</a></li>
+    <li><a href="#considerations">Considerations</a></li>
+    <li><a href="#other-patterns-used-with-the-builder-pattern">Other Patterns Used with the Builder Pattern</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article >
+    
+    
+        
+        
+    
+    <h2 id="overview">Overview</h2>
+<p>The Builder pattern is a design pattern that provides a flexible and intuitive way to create objects. It abstracts the complex object creation process and allows users to construct objects step by step.</p>
+<p>The Builder pattern consists of the following elements:</p>
+<ul>
+<li>Director: Responsible for object creation and uses the Builder interface to construct the object.</li>
+<li>Builder: Defines the interface for object creation and provides methods to build each part of the object.</li>
+<li>ConcreteBuilder: Implements the Builder interface to construct and configure the actual object.</li>
+<li>Product: Represents the final object being created.</li>
+</ul>
+<pre  class="mc-prism hide language-text" ><code class="language-java">// Product class
+public class Product {
+    private String partA;
+    private String partB;
+    private String partC;
+
+    public void setPartA(String partA) {
+        this.partA = partA;
+    }
+
+    public void setPartB(String partB) {
+        this.partB = partB;
+    }
+
+    public void setPartC(String partC) {
+        this.partC = partC;
+    }
+
+    public String getResult() {
+        return &quot;Part A: &quot; + partA + &quot;, Part B: &quot; + partB + &quot;, Part C: &quot; + partC;
+    }
+}
+
+// Builder interface
+public interface Builder {
+    void buildPartA();
+    void buildPartB();
+    void buildPartC();
+    Product getResult();
+}
+
+// ConcreteBuilder class
+public class ConcreteBuilder implements Builder {
+    private Product product;
+
+    public ConcreteBuilder() {
+        this.product = new Product();
+    }
+
+    public void buildPartA() {
+        product.setPartA(&quot;A&quot;);
+    }
+
+    public void buildPartB() {
+        product.setPartB(&quot;B&quot;);
+    }
+
+    public void buildPartC() {
+        product.setPartC(&quot;C&quot;);
+    }
+
+    public Product getResult() {
+        return product;
+    }
+}
+
+// Director class
+public class Director {
+    private Builder builder;
+
+    public void setBuilder(Builder builder) {
+        this.builder = builder;
+    }
+
+    public Product construct() {
+        builder.buildPartA();
+        builder.buildPartB();
+        builder.buildPartC();
+        return builder.getResult();
+    }
+}
+
+// Example usage
+public class Main {
+    public static void main(String[] args) {
+        Director director = new Director();
+        Builder builder = new ConcreteBuilder();
+        director.setBuilder(builder);
+
+        Product product = director.construct();
+        System.out.println(product.getResult());
+    }
+}
+</code></pre>
+<p>In the above example code, the Builder pattern is used to create and construct a <code>Product</code> object. The <code>Builder</code> interface defines the methods for object creation, and the <code>ConcreteBuilder</code> class implements the interface to construct and configure the actual object. The <code>Director</code> class uses the <code>Builder</code> interface to orchestrate the object creation process and returns the final <code>Product</code> object.</p>
+<p>This example code demonstrates the basic implementation of the Builder pattern. It can be extended and enhanced as per requirements, such as adding validation for object properties, to create a complete and robust implementation of the Builder pattern in a production environment.</p>
+<h2 id="advantages">Advantages</h2>
+<p>The Builder pattern has the following advantages:</p>
+<ul>
+<li>It allows the construction of objects in a step-by-step manner, making the object&rsquo;s construction process clear and flexible.</li>
+<li>It enables the creation of readable code when constructing complex objects.</li>
+<li>It ensures the consistency and stability of objects by not exposing the object&rsquo;s construction process to the client.</li>
+</ul>
+<h2 id="considerations">Considerations</h2>
+<p>Here are some considerations when using the Builder pattern:</p>
+<ul>
+<li>Since the object construction process is performed step-by-step, some parts of the object may be in an invalid state if not properly handled. To prevent this, validation for object properties should be performed.</li>
+<li>The Builder pattern is typically used for creating complex objects, and it</li>
+</ul>
+<p>may not be efficient for simple objects. If the object has few or simple construction steps, considering other creational patterns may be more appropriate.</p>
+<p>Here is an example code that demonstrates the inefficient use of the Builder pattern for creating a simple object:</p>
+<pre  class="mc-prism hide language-text" ><code class="language-java">public class SimpleObject {
+    private String propertyA;
+    private String propertyB;
+    private String propertyC;
+
+    public SimpleObject(String propertyA, String propertyB, String propertyC) {
+        this.propertyA = propertyA;
+        this.propertyB = propertyB;
+        this.propertyC = propertyC;
+    }
+
+    // Getters and setters
+}
+
+public class SimpleObjectBuilder {
+    private String propertyA;
+    private String propertyB;
+    private String propertyC;
+
+    public SimpleObjectBuilder() {
+    }
+
+    public SimpleObjectBuilder setPropertyA(String propertyA) {
+        this.propertyA = propertyA;
+        return this;
+    }
+
+    public SimpleObjectBuilder setPropertyB(String propertyB) {
+        this.propertyB = propertyB;
+        return this;
+    }
+
+    public SimpleObjectBuilder setPropertyC(String propertyC) {
+        this.propertyC = propertyC;
+        return this;
+    }
+
+    public SimpleObject build() {
+        return new SimpleObject(propertyA, propertyB, propertyC);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        SimpleObjectBuilder builder = new SimpleObjectBuilder();
+        SimpleObject simpleObject = builder.setPropertyA(&quot;A&quot;)
+                                           .setPropertyB(&quot;B&quot;)
+                                           .setPropertyC(&quot;C&quot;)
+                                           .build();
+    }
+}
+</code></pre>
+<p>In the above example code, the Builder pattern is used to create a simple object <code>SimpleObject</code>. However, since the <code>SimpleObject</code> class already provides a constructor that can directly initialize the required properties, using the Builder pattern in this case is inefficient. It adds an unnecessary intermediate step of <code>SimpleObjectBuilder</code>, making the code more complex and less readable.</p>
+<p>A more efficient approach is to directly create the <code>SimpleObject</code> object as follows:</p>
+<pre  class="mc-prism hide language-text" ><code class="language-java">public class Main {
+    public static void main(String[] args) {
+        SimpleObject simpleObject = new SimpleObject(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;);
+    }
+}
+</code></pre>
+<p>By doing so, you can create a simple object without the need for an unnecessary Builder class, resulting in more concise and readable code.</p>
+<h2 id="other-patterns-used-with-the-builder-pattern">Other Patterns Used with the Builder Pattern</h2>
+<p>The Builder pattern can be used in conjunction with other design patterns. Some commonly used patterns with the Builder pattern include:</p>
+<ul>
+<li>Abstract Factory Pattern: The Abstract Factory pattern can be used to create multiple Builder interfaces and corresponding ConcreteBuilders, allowing the creation of different types of objects.</li>
+<li>Prototype Pattern: The Prototype pattern can be used to clone existing objects and then modify or add configurations using the Builder pattern.</li>
+<li>Uniform Interface Pattern: The Builder pattern can be used to create and configure multiple objects using a uniform interface for object creation and configuration.</li>
+</ul>
+
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>Copyright © 2023 by soulsy</article>
+</footer>
+
+</main>
+    </body>
+</html>

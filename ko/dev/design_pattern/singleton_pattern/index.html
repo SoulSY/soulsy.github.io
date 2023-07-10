@@ -1,0 +1,352 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='ko'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>디자인 패턴 03. Singleton Pattern - SamTech</title>
+
+    
+    <meta name="description" content="Singleton Pattern의 이해" />
+    
+
+    
+
+    
+    <meta name="author" content="soulsy" />
+    
+
+    
+        <meta property="og:title" content="디자인 패턴 03. Singleton Pattern" />
+<meta property="og:description" content="Singleton Pattern의 이해" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://soulsy.github.io/ko/dev/design_pattern/singleton_pattern/" /><meta property="article:section" content="dev" />
+<meta property="article:published_time" content="2023-06-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-06-18T00:00:00+00:00" />
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="디자인 패턴 03. Singleton Pattern"/>
+<meta name="twitter:description" content="Singleton Pattern의 이해"/>
+
+    <link rel="stylesheet" href="/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+    <link rel="stylesheet" href="/lib/css/prism.min.6226f06f992e0d6166b0e26724efd050dcc381202a752892ba523b1b865de2ea5e427f8f7d10de682fc35d6e7444018247d1f25db5e1e3bab17068ce191c5886.css" integrity="sha512-Yibwb5kuDWFmsOJnJO/QUNzDgSAqdSiSulI7G4Zd4upeQn&#43;PfRDeaC/DXW50RAGCR9HyXbXh47qxcGjOGRxYhg==">
+
+
+        
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1JSCNZBFBL"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-1JSCNZBFBL', { 'anonymize_ip': false });
+}
+</script>
+
+    
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="/js/zooming.684b5d075bf94d0adfa21a7e7eb9acec1ddfb2e7b47d6657981617f0db0cf50949f1172801595afa3051f51b28d67f6a2d0c41be677b59b564307d9dbe4a4fd2.js" integrity="sha512-aEtdB1v5TQrfohp&#43;frms7B3fsue0fWZXmBYX8NsM9QlJ8RcoAVla&#43;jBR9Rso1n9qLQxBvmd7WbVkMH2dvkpP0g=="></script>
+
+
+
+
+
+
+
+    
+        
+
+        
+        
+
+        
+        
+            
+        
+
+        <script defer src="/js/prism.c16efe6b4f0ae7df5f934ad76ec45633d61b926e66c11dae8f2f56f5e6fc27ba412a3f88ba617f8436480ac928ca3fbc0c3cdee84992a64130d42ea551dad860.js" integrity="sha512-wW7&#43;a08K599fk0rXbsRWM9Ybkm5mwR2ujy9W9eb8J7pBKj&#43;IumF/hDZICskoyj&#43;8DDze6EmSpkEw1C6lUdrYYA==" data-manual></script>
+    
+
+
+
+    
+    
+    
+    <script defer src="/js/search-ko.ba5af354b5d8708d7673fccf7310ef4967d109681e700b6d44266a7bf313e8c4e33a7d570eacd3eebfbecc4e9df29d5d9d45511e0a192bb923d3d228c38b0d9a.js" integrity="sha512-ulrzVLXYcI12c/zPcxDvSWfRCWgecAttRCZqe/MT6MTjOn1XDqzT7r&#43;&#43;zE6d8p1dnUVRHgoZK7kj09Iow4sNmg=="></script>
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
+        </div>
+
+        <div>
+            <a href="/ko/">삼테크</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
+        
+            <div id="search_tool">
+                <svg id="search_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></svg><div id="search_menu_wrapper" class="hidden">
+    <div id="search_menu">
+        <div id="search_menu_toolbar">
+            <div id="search_menu_input_wrapper">
+                <input id="search_menu_input" type="text" placeholder='Search Posts'>
+            </div>
+            <div id="search_menu_close_btn">
+                <svg width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></svg>
+            </div>
+        </div>
+        <div id="search_menu_results">
+        </div>
+    </div>
+</div>
+</div>
+        
+
+        
+            <div id="translation_tool" class="dropdown-wrapper pure-menu pure-menu-horizontal toolbox-btn">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <div class="dropdown-btn pure-menu-link">
+                            <svg width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></svg>
+                            <span class="dropdown-desc">한글</span>
+                        </div>
+                        <ul class="pure-menu-children">
+                            
+                            <li class="pure-menu-item">
+                                <a href="https://soulsy.github.io/" class="pure-menu-link">English</a>
+                            </li>
+                            
+                            <li class="pure-menu-item">
+                                <a href="https://soulsy.github.io/ko/" class="pure-menu-link">한글</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/ko/about/" class="pure-menu-link">About</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/ko/news/" class="pure-menu-link">News</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="/ko/dev/" class="pure-menu-link">Dev</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/ko/knowledge/" class="pure-menu-link">Knowledge</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="/ko/about/">About</a>
+                </li><li>
+                    <a href="/ko/news/">News</a>
+                </li><li>
+                    <a href="/ko/dev/">Dev</a>
+                </li><li>
+                    <a href="/ko/knowledge/">Knowledge</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#singleton-패턴의-개요">Singleton 패턴의 개요</a></li>
+    <li><a href="#singleton-패턴의-장점">Singleton 패턴의 장점</a></li>
+    <li><a href="#singleton-패턴을-잘못-사용하는-경우">Singleton 패턴을 잘못 사용하는 경우</a></li>
+    <li><a href="#singleton-패턴과-함께-사용하면-좋은-패턴">Singleton 패턴과 함께 사용하면 좋은 패턴</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article >
+    
+    
+        
+        
+    
+    <p>Singleton 패턴은 클래스의 인스턴스가 단일하게 유지되도록 보장하는 디자인 패턴입니다. 이 패턴은 어떤 클래스의 인스턴스가 하나만 존재하고, 이를 전역적으로 접근할 수 있는 방법을 제공합니다.</p>
+<h2 id="singleton-패턴의-개요">Singleton 패턴의 개요</h2>
+<p>Singleton 패턴은 다음과 같은 특징을 가집니다:</p>
+<ul>
+<li>클래스의 인스턴스가 오직 하나만 존재합니다.</li>
+<li>전역적으로 접근 가능한 접근점을 제공하여 어디서든 동일한 인스턴스에 접근할 수 있습니다.</li>
+</ul>
+<p>Singleton 패턴은 다양한 상황에서 유용하게 사용될 수 있으며, 자주 사용되는 패턴 중 하나입니다.</p>
+<h2 id="singleton-패턴의-장점">Singleton 패턴의 장점</h2>
+<p>Singleton 패턴은 다음과 같은 장점을 가집니다:</p>
+<ul>
+<li>하나의 인스턴스만 존재하므로, 자원의 낭비를 줄일 수 있습니다.</li>
+<li>전역적인 접근점을 통해 인스턴스에 접근할 수 있으므로, 간편한 사용이 가능합니다.</li>
+</ul>
+<h2 id="singleton-패턴을-잘못-사용하는-경우">Singleton 패턴을 잘못 사용하는 경우</h2>
+<p>Singleton 패턴을 잘못 사용하면 다음과 같은 문제가 발생할 수 있습니다:</p>
+<ul>
+<li>멀티스레드 환경에서 동기화 문제가 발생할 수 있습니다. 동시에 여러 스레드가 인스턴스 생성을 요청할 경우, 여러 인스턴스가 생성될 수 있습니다.</li>
+<li>테스트 용이성이 저하될 수 있습니다. Singleton 인스턴스가 의존성으로 주입되지 않고 전역적으로 사용되기 때문에 테스트하기 어려울 수 있습니다.</li>
+<li>단일 책임 원칙(Single Responsibility Principle)에 위배될 수 있습니다. Singleton 클래스가 다른 기능을 포함하면서 인스턴스 유일성을 유지하기 위한 코드가 추가될 경우, 클래스의 책임이 너무 많아질 수 있습니다.</li>
+</ul>
+<p>잘못된 Singleton 패턴은 다음과 같은 문제를 일으킬 수 있습니다. 여러 스레드가 동시에 인스턴스를 생성할 수 있어서 여러 인스턴스가 생성되거나, 인스턴스의 일관성을 보장할 수 없는 경우입니다. 아래는 이러한 문제가 발생하는 잘못된 Singleton 패턴의 예시 코드입니다.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-java">public class BadSingleton {
+    private static BadSingleton instance;
+
+    private BadSingleton() {
+        // 인스턴스 생성 로직
+    }
+
+    public static BadSingleton getInstance() {
+        if (instance == null) {
+            // 여러 스레드가 동시에 이 부분에 진입할 수 있음
+            instance = new BadSingleton();
+        }
+        return instance;
+    }
+
+    // 기타 기능 및 데이터 멤버
+}
+</code></pre>
+<p>위의 코드에서 getInstance() 메서드는 여러 스레드가 동시에 인스턴스를 생성할 수 있는 문제가 있습니다. 여러 스레드가 동시에 instance가 null인 것을 확인하고 인스턴스를 생성하게 되면, 서로 다른 인스턴스가 생성될 수 있습니다.</p>
+<p>이러한 상황에서는 동기화(synchronization) 문제를 해결해야 합니다. 아래는 동기화를 추가하여 올바르게 동작하는 Singleton 패턴의 예시 코드입니다.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-java">public class GoodSingleton {
+    private static GoodSingleton instance;
+
+    private GoodSingleton() {
+        // 인스턴스 생성 로직
+    }
+
+    public static synchronized GoodSingleton getInstance() {
+        if (instance == null) {
+            instance = new GoodSingleton();
+        }
+        return instance;
+    }
+
+    // 기타 기능 및 데이터 멤버
+}
+</code></pre>
+<p>위의 코드에서 getInstance() 메서드에 <code>synchronized</code> 키워드를 추가하여 동기화하였습니다. 이를 통해 여러 스레드가 동시에 getInstance() 메서드에 접근하는 것을 방지하고, 하나의 스레드만이 인스턴스를 생성할 수 있도록 보장합니다.</p>
+<p>올바르게 동작하는 Singleton 패턴은 멀티스레드 환경에서 안전하게 사용할 수 있습니다. 하지만 Singleton 패턴을 사용할 때는 주의해야 하며, 필요한 경우에만 사용하는 것이 좋습니다.</p>
+<h2 id="singleton-패턴과-함께-사용하면-좋은-패턴">Singleton 패턴과 함께 사용하면 좋은 패턴</h2>
+<p>Singleton 패턴과 함께 사용하면 좋은 패턴으로는 Abstract Factory 패턴이 있습니다. Abstract Factory 패턴을 사용하여 Singleton 패턴으로 생성된 인스턴스를 활용할 수 있습니다. Singleton 패턴을 적용하여 팩토리 클래스의 인스턴스가 단일하게 유지되면, 일관된 객체 생성을 보장할 수 있습니다.</p>
+<p>아래는 Singleton 패턴과 Abstract Factory 패턴을 함께 사용하는 예제 코드입니다.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-java">// Singleton 패턴을 적용한 팩토
+
+리 클래스
+public class SingletonFactory implements AbstractFactory {
+    private static SingletonFactory instance;
+
+    private SingletonFactory() {
+        // 인스턴스 생성 로직
+    }
+
+    public static synchronized SingletonFactory getInstance() {
+        if (instance == null) {
+            instance = new SingletonFactory();
+        }
+        return instance;
+    }
+
+    public AbstractProductA createProductA() {
+        return new ConcreteProductA();
+    }
+
+    public AbstractProductB createProductB() {
+        return new ConcreteProductB();
+    }
+}
+
+// Abstract Factory 패턴을 위한 인터페이스
+public interface AbstractFactory {
+    AbstractProductA createProductA();
+    AbstractProductB createProductB();
+}
+
+// 구체적인 제품 클래스
+public class ConcreteProductA implements AbstractProductA {
+    // 제품 A의 구현
+}
+
+public class ConcreteProductB implements AbstractProductB {
+    // 제품 B의 구현
+}
+</code></pre>
+<p>위의 예제 코드에서 Singleton 패턴을 적용한 SingletonFactory 클래스는 AbstractFactory 인터페이스를 구현합니다. SingletonFactory 클래스의 인스턴스는 Singleton 패턴에 따라 단일하게 유지되며, createProductA 및 createProductB 메서드를 통해 객체를 생성합니다.</p>
+<p>이렇게 함께 사용되는 경우, Singleton 패턴을 통해 Abstract Factory 패턴의 구체 팩토리 클래스의 인스턴스가 단일하게 유지되므로, 일관된 객체 생성이 가능해집니다.</p>
+
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>Copyright © 2023 by soulsy</article>
+</footer>
+
+</main>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on SamTech</title>
+    <link>https://soulsy.github.io/tags/ai/</link>
+    <description>Recent content in AI on SamTech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 04 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TensorFlow Overview</title>
+      <link>https://soulsy.github.io/knowledge/tensorflow/overview/</link>
+      <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/knowledge/tensorflow/overview/</guid>
+      <description>Introduction TensorFlow is an open-source machine learning framework developed by Google. It provides a comprehensive set of tools and libraries for building and deploying machine learning models. TensorFlow helps developers define neural networks, train them, and perform numerical computations efficiently while handling large datasets. It supports multiple programming languages such as Python, C++, and Java, making it accessible to a wide range of developers. TensorFlow has gained popularity due to its flexibility, scalability, and extensive community support.</description>
+    </item>
+    
+  </channel>
+</rss>

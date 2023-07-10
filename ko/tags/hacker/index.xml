@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hacker on SamTech</title>
+    <link>https://soulsy.github.io/ko/tags/hacker/</link>
+    <description>Recent content in Hacker on SamTech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/tags/hacker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WordPress 플러그인 취약점을 이용한 비밀 관리자 계정 생성 공격 시도</title>
+      <link>https://soulsy.github.io/ko/news/003/</link>
+      <pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/news/003/</guid>
+      <description>WordPress 플러그인 취약점을 이용한 비밀 관리자 계정 생성 공격 시도 출처: The Hacker News - 기사 링크
+The Hacker News는 WordPress 플러그인인 Ultimate Member에서 발견된 심각한 보안 취약점을 이용한 지속적인 공격에 대해 보도하였습니다(CVE-2023-3460, CVSS score:9.8). 이 취약점으로 인해 최대 200,000개의 WordPress 웹사이트가 위험에 노출되었습니다.
+이 취약점은 Ultimate Member 플러그인의 모든 버전에 영향을 미치며, 최신 버전인 2.6.6(2023년 6월 29일에 출시됨)을 포함합니다.
+Ultimate Member는 WordPress 사이트에서 사용자 프로필 및 커뮤니티 생성을 용이하게 하는 인기 있는 플러그인으로, 계정 관리 기능도 제공합니다.</description>
+    </item>
+    
+  </channel>
+</rss>
