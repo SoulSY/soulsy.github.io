@@ -1,0 +1,283 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='ko'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>선형 회귀 모델 - SamTech</title>
+
+    
+    <meta name="description" content="선형 회귀 모델" />
+    
+
+    
+
+    
+    <meta name="author" content="soulsy" />
+    
+
+    
+        <meta property="og:title" content="선형 회귀 모델" />
+<meta property="og:description" content="선형 회귀 모델" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://soulsy.github.io/ko/knowledge/tensorflow/linear_regression_model/" /><meta property="article:section" content="knowledge" />
+<meta property="article:published_time" content="2023-07-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-12T00:00:00+00:00" />
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="선형 회귀 모델"/>
+<meta name="twitter:description" content="선형 회귀 모델"/>
+
+    <link rel="stylesheet" href="/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+
+        
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1JSCNZBFBL"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-1JSCNZBFBL', { 'anonymize_ip': false });
+}
+</script>
+
+    
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="/js/zooming.684b5d075bf94d0adfa21a7e7eb9acec1ddfb2e7b47d6657981617f0db0cf50949f1172801595afa3051f51b28d67f6a2d0c41be677b59b564307d9dbe4a4fd2.js" integrity="sha512-aEtdB1v5TQrfohp&#43;frms7B3fsue0fWZXmBYX8NsM9QlJ8RcoAVla&#43;jBR9Rso1n9qLQxBvmd7WbVkMH2dvkpP0g=="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
+
+
+
+
+
+
+    
+    
+    
+    <script defer src="/js/search-ko.ba5af354b5d8708d7673fccf7310ef4967d109681e700b6d44266a7bf313e8c4e33a7d570eacd3eebfbecc4e9df29d5d9d45511e0a192bb923d3d228c38b0d9a.js" integrity="sha512-ulrzVLXYcI12c/zPcxDvSWfRCWgecAttRCZqe/MT6MTjOn1XDqzT7r&#43;&#43;zE6d8p1dnUVRHgoZK7kj09Iow4sNmg=="></script>
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
+        </div>
+
+        <div>
+            <a href="/ko/">삼테크</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
+        
+            <div id="search_tool">
+                <svg id="search_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></svg><div id="search_menu_wrapper" class="hidden">
+    <div id="search_menu">
+        <div id="search_menu_toolbar">
+            <div id="search_menu_input_wrapper">
+                <input id="search_menu_input" type="text" placeholder='Search Posts'>
+            </div>
+            <div id="search_menu_close_btn">
+                <svg width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></svg>
+            </div>
+        </div>
+        <div id="search_menu_results">
+        </div>
+    </div>
+</div>
+</div>
+        
+
+        
+            <div id="translation_tool" class="dropdown-wrapper pure-menu pure-menu-horizontal toolbox-btn">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <div class="dropdown-btn pure-menu-link">
+                            <svg width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></svg>
+                            <span class="dropdown-desc">한글</span>
+                        </div>
+                        <ul class="pure-menu-children">
+                            
+                            <li class="pure-menu-item">
+                                <a href="https://soulsy.github.io/" class="pure-menu-link">English</a>
+                            </li>
+                            
+                            <li class="pure-menu-item">
+                                <a href="https://soulsy.github.io/ko/" class="pure-menu-link">한글</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/ko/about/" class="pure-menu-link">About</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/ko/news/" class="pure-menu-link">News</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/ko/dev/" class="pure-menu-link">Dev</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="/ko/knowledge/" class="pure-menu-link">Knowledge</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="/ko/about/">About</a>
+                </li><li>
+                    <a href="/ko/news/">News</a>
+                </li><li>
+                    <a href="/ko/dev/">Dev</a>
+                </li><li>
+                    <a href="/ko/knowledge/">Knowledge</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#선형-회귀-모델의-특징">선형 회귀 모델의 특징</a></li>
+    <li><a href="#선형-회귀-모델을-적용한-좋은-사례">선형 회귀 모델을 적용한 좋은 사례</a></li>
+    <li><a href="#손실-함수">손실 함수</a></li>
+    <li><a href="#손실-함수-종류-및-설명">손실 함수 종류 및 설명</a></li>
+    <li><a href="#최적화-알고리즘에-주로-사용되는-알고리즘">최적화 알고리즘에 주로 사용되는 알고리즘</a></li>
+    <li><a href="#선형-회귀-모델을-사용할-때-주의해야-할-점">선형 회귀 모델을 사용할 때 주의해야 할 점</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article >
+    
+    
+        
+        
+    
+    <h1 id="선형-회귀-모델-linear-regression-model">선형 회귀 모델 (Linear Regression Model)</h1>
+<p>선형 회귀 모델은 입력 변수와 출력 변수 사이의 선형 관계를 모델링하는 통계학적 기법입니다. 이를 통해 입력 변수의 값에 기반하여 출력 변수를 예측할 수 있습니다. TensorFlow를 이용하여 선형 회귀 모델을 구현하고 학습시키기 위한 강력한 도구를 활용할 수 있습니다.</p>
+<h2 id="선형-회귀-모델의-특징">선형 회귀 모델의 특징</h2>
+<ul>
+<li>
+<p>선형 회귀 모델은 입력 변수와 출력 변수 간의 선형 관계를 모델링하므로, 데이터에 대한 해석력이 높습니다. 예를 들어, 주택 가격을 예측하는 경우, 주택 크기가 증가할수록 가격이 상승하는 선형 관계를 예측할 수 있습니다.</p>
+</li>
+<li>
+<p>선형 회귀 모델은 모델의 계수(가중치)와 절편(편향)을 추정하여 입력 변수에 대한 출력 값을 예측합니다. 선형 함수를 통해 출력 값을 예측하는데, 일반적인 선형 회귀 모델은 다음과 같은 형태를 가집니다:
+$$
+\hat{y} = w_1 x_1 + w_2 x_2 + &hellip; + w_n x_n + b
+$$</p>
+<p>여기서 $w$ 는 가중치, $x$ 는 입력 변수, $b$ 는 절편입니다.</p>
+</li>
+</ul>
+<h2 id="선형-회귀-모델을-적용한-좋은-사례">선형 회귀 모델을 적용한 좋은 사례</h2>
+<p>선형 회귀 모델은 다양한 분야에서 사용되고 있습니다. 여기에는 경제학, 마케팅, 의학 등이 포함됩니다. 예를 들어, 주택 가격 예측은 주택 시장에 대한 투자 결정을 돕는 데 사용될 수 있습니다. 또한, 광고 예산을 기반으로 판매량을 예측하여 마케팅 전략을 계획하는 데 활용될 수도 있습니다. 의학 분야에서는 환자의 나이, 체질량 지수 등과 같은 변수를 사용하여 질병 발생 가능성을 예측하는데 사용될 수 있습니다.</p>
+<h2 id="손실-함수">손실 함수</h2>
+<p>손실 함수는 선형 회귀 모델의 출력 값과 실제 출력 값 사이의 차이를 측정하여 모델의 예측 성능을 평가합니다. 선형 회귀 모델에서는 주로 평균 제곱 오차(Mean Squared Error, MSE)가 사용됩니다. 손실 함수를 최소화하는 것은 모델의 예측 성능을 개선하기 위해 가중치를 조정하는 데 중요합니다. 작은 손실 값은 모델의 예측이 실제 값에 가까움을 의미하며, 모델을 더 정확하게 만드는 데 도움을 줍니다.</p>
+<h2 id="손실-함수-종류-및-설명">손실 함수 종류 및 설명</h2>
+<ul>
+<li>
+<p>평균 제곱 오차(Mean Squared Error, MSE): MSE는 예측 값과 실제 값의 차이를 제곱하여 평균을 계산합니다. 이 손실 함수는 선형 회귀에 많이 사용되며, 모델의 예측과 실제 값 사이의 오차를 크게 벌리는 이상치에 민감할 수 있습니다.
+$$
+\text{MSE} = \frac{1}{n} \sum_{i=1}^n (\hat{y}_i - y_i)^2
+$$</p>
+<p>여기서 $y$ 는 실제 출력 값, $\hat{y}$ 는 모델의 예측 값입니다.</p>
+</li>
+<li>
+<p>평균 절대 오차(Mean Absolute Error, MAE): MAE는 예측 값과 실제 값의 차이의 절댓값을 평균하여 계산합니다. 이 손실 함수는 이상치에 덜 민감하며, 회귀 모델의 불확실성을 고려할 때 유용합니다.
+$$
+\text{MAE} = \frac{1}{n} \sum_{i=1}^n |x_i - x|
+$$
+여기서 $|x_i - x|$가 절대 오차를 의미합니다.</p>
+</li>
+</ul>
+<h2 id="최적화-알고리즘에-주로-사용되는-알고리즘">최적화 알고리즘에 주로 사용되는 알고리즘</h2>
+<ul>
+<li>확률적 경사 하강법(Stochastic Gradient Descent, SGD): SGD는 각 학습 단계에서 일부 데이터만 사용하여 가중치를 업데이트하는 방식입니다. 이 알고리즘은 속도가 빠르지만 불안정할 수 있으며, 데이터가 매우 큰 경우에 유용합니다.</li>
+<li>모멘텀(Momentum): 모멘텀은 이전 업데이트의 모멘텀을 고려하여 가중치 업데이트에 관성을 부여하는 알고리즘입니다. 이는 수렴 속도를 높이고 지역 최소값에서 벗어나는 데 도움을 줍니다.</li>
+<li>아담(Adam): 아담은 모멘텀과 학습률 조정을 결합한 최적화 알고리즘으로, 다양한 문제에서 효과적으로 작동합니다. 학습률을 자동으로 조정하여 수렴을 개선하고 빠른 속도로 최적화할 수 있습니다.</li>
+</ul>
+<h2 id="선형-회귀-모델을-사용할-때-주의해야-할-점">선형 회귀 모델을 사용할 때 주의해야 할 점</h2>
+<ul>
+<li>다중 공선성: 입력 변수 간에 강한 상관 관계가 있는 경우, 모델의 정확성과 해석력이 저하될 수 있습니다. 이를 방지하기 위해 변수 선택 및 스케일링을 고려해야 합니다.</li>
+<li>이상치 처리: 이상치는 모델의 학습과 예측에 부정적인 영향을 줄 수 있으므로, 이를 탐지하고 처리해야 합니다. 이상치 탐지 기법과 이상치를 대체하거나 삭제하는 전처리 방법을 사용할 수 있습니다.</li>
+<li>과적합: 모델이 학습 데이터에 너무 잘 맞게 되어 새로운 데이터에 대한 일반화 성능이 저하될 수 있습니다. 교차 검증 등의 방법을 사용하여 과적합을 방지할 수 있습니다.</li>
+</ul>
+<p>이상으로 선형 회귀 모델에 대해 간단히 알아보았습니다.</p>
+
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>Copyright © 2023 by soulsy</article>
+</footer>
+
+</main>
+    </body>
+</html>

@@ -6,7 +6,17 @@
     <description>Recent content in machine learning on SamTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 04 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linear Regression Model</title>
+      <link>https://soulsy.github.io/knowledge/tensorflow/linear_regression_model/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/knowledge/tensorflow/linear_regression_model/</guid>
+      <description>Linear Regression Model A linear regression model is a statistical technique for modeling the relationship between an input variable and an output variable. It allows us to predict the output variable based on the values of the input variables. TensorFlow provides powerful tools for implementing and training linear regression models.
+Characteristics Linear regression models capture linear relationships between input and output variables, providing a high level of interpretability. For example, in predicting housing prices, we can establish that as the size of a house increases, the price also tends to increase in a linear fashion.</description>
+    </item>
+    
     <item>
       <title>TensorFlow Overview</title>
       <link>https://soulsy.github.io/knowledge/tensorflow/overview/</link>

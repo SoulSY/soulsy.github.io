@@ -1,0 +1,279 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Linear Regression Model - SamTech</title>
+
+    
+    <meta name="description" content="Linear Regression Model" />
+    
+
+    
+
+    
+    <meta name="author" content="soulsy" />
+    
+
+    
+        <meta property="og:title" content="Linear Regression Model" />
+<meta property="og:description" content="Linear Regression Model" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://soulsy.github.io/knowledge/tensorflow/linear_regression_model/" /><meta property="article:section" content="knowledge" />
+<meta property="article:published_time" content="2023-07-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-12T00:00:00+00:00" />
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linear Regression Model"/>
+<meta name="twitter:description" content="Linear Regression Model"/>
+
+    <link rel="stylesheet" href="/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
+
+
+
+
+        
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1JSCNZBFBL"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-1JSCNZBFBL', { 'anonymize_ip': false });
+}
+</script>
+
+    
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="/js/header.7a2a109ec3782c57bad0332b662f8a5f41765505936b69868eb8bd5241de9daf23c388e82ca1831f6d09935013dcb9f71bfa7face3975880c1076028b7b0a6e1.js" integrity="sha512-eioQnsN4LFe60DMrZi&#43;KX0F2VQWTa2mGjri9UkHena8jw4joLKGDH20Jk1AT3Ln3G/p/rOOXWIDBB2Aot7Cm4Q=="></script>
+
+
+
+    <script defer src="/js/zooming.684b5d075bf94d0adfa21a7e7eb9acec1ddfb2e7b47d6657981617f0db0cf50949f1172801595afa3051f51b28d67f6a2d0c41be677b59b564307d9dbe4a4fd2.js" integrity="sha512-aEtdB1v5TQrfohp&#43;frms7B3fsue0fWZXmBYX8NsM9QlJ8RcoAVla&#43;jBR9Rso1n9qLQxBvmd7WbVkMH2dvkpP0g=="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="/js/math.d7efde37b2eb8879651e1f4489bcd4d8203b8c2bf8ca12c9e1b8cd11bfd6395b172f4999fff43ce0d047889a2bdb71ee74aebbae5327590192d1144e790fcd7b.js" integrity="sha512-1&#43;/eN7LriHllHh9EibzU2CA7jCv4yhLJ4bjNEb/WOVsXL0mZ//Q84NBHiJor23HudK67rlMnWQGS0RROeQ/New=="></script>
+
+
+
+
+
+
+    
+    
+    
+    <script defer src="/js/search-en.1673d4830ee4ce3c4c87a23698a8ec40e83a1819e6bc44d78ac9480cb517dc925b6ab17a1f1f69dd606c493532b730fad074346ee994b35d4a2f31123fad072b.js" integrity="sha512-FnPUgw7kzjxMh6I2mKjsQOg6GBnmvETXislIDLUX3JJbarF6Hx9p3WBsSTUytzD60HQ0bumUs11KLzESP60HKw=="></script>
+
+
+
+
+</head><body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></svg>
+        </div>
+
+        <div>
+            <a href="/">SamTech</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></svg>
+        </div>
+
+        
+            <div id="search_tool">
+                <svg id="search_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></svg><div id="search_menu_wrapper" class="hidden">
+    <div id="search_menu">
+        <div id="search_menu_toolbar">
+            <div id="search_menu_input_wrapper">
+                <input id="search_menu_input" type="text" placeholder='Search Posts'>
+            </div>
+            <div id="search_menu_close_btn">
+                <svg width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></svg>
+            </div>
+        </div>
+        <div id="search_menu_results">
+        </div>
+    </div>
+</div>
+</div>
+        
+
+        
+            <div id="translation_tool" class="dropdown-wrapper pure-menu pure-menu-horizontal toolbox-btn">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <div class="dropdown-btn pure-menu-link">
+                            <svg width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></svg>
+                            <span class="dropdown-desc">English</span>
+                        </div>
+                        <ul class="pure-menu-children">
+                            
+                            <li class="pure-menu-item">
+                                <a href="https://soulsy.github.io/" class="pure-menu-link">English</a>
+                            </li>
+                            
+                            <li class="pure-menu-item">
+                                <a href="https://soulsy.github.io/ko/" class="pure-menu-link">한글</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu"><ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/about/" class="pure-menu-link">About</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/news/" class="pure-menu-link">News</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/dev/" class="pure-menu-link">Dev</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="/knowledge/" class="pure-menu-link">Knowledge</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="/about/">About</a>
+                </li><li>
+                    <a href="/news/">News</a>
+                </li><li>
+                    <a href="/dev/">Dev</a>
+                </li><li>
+                    <a href="/knowledge/">Knowledge</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#characteristics">Characteristics</a></li>
+    <li><a href="#representative-applications">Representative Applications</a></li>
+    <li><a href="#loss-function">Loss Function</a></li>
+    <li><a href="#types-of-loss-functions">Types of Loss Functions</a></li>
+    <li><a href="#optimization-algorithms-commonly-used">Optimization Algorithms Commonly Used</a></li>
+    <li><a href="#considerations">Considerations</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article >
+    
+    
+        
+        
+    
+    <h1 id="linear-regression-model">Linear Regression Model</h1>
+<p>A linear regression model is a statistical technique for modeling the relationship between an input variable and an output variable. It allows us to predict the output variable based on the values of the input variables. TensorFlow provides powerful tools for implementing and training linear regression models.</p>
+<h2 id="characteristics">Characteristics</h2>
+<ul>
+<li>Linear regression models capture linear relationships between input and output variables, providing a high level of interpretability. For example, in predicting housing prices, we can establish that as the size of a house increases, the price also tends to increase in a linear fashion.</li>
+<li>Linear regression models estimate the weights and biases of the model to predict the output variable based on the input variables. The prediction is made using a linear function, and a typical linear regression model has the following form:
+$$
+\hat{y} = w_1 x_1 + w_2 x_2 + &hellip; + w_n x_n + b
+$$
+$w$ represents the weights, $x$ represents the input variables, and $b$ represents the bias term.</li>
+</ul>
+<h2 id="representative-applications">Representative Applications</h2>
+<p>Linear regression models find applications in various fields such as economics, marketing, and medicine. For instance, in predicting housing prices, it aids in investment decisions in the real estate market. Additionally, it can be utilized to forecast sales based on advertising budgets, facilitating marketing strategy planning. In the medical field, variables such as age and body mass index can be used to predict the likelihood of disease occurrence.</p>
+<h2 id="loss-function">Loss Function</h2>
+<p>The loss function measures the discrepancy between the predicted output values and the actual output values of the linear regression model. Mean Squared Error (MSE) is commonly used as the loss function in linear regression models. Minimizing the loss function is crucial to improving the prediction performance of the model. A smaller loss value indicates that the model&rsquo;s predictions are closer to the actual values, leading to a more accurate model.</p>
+<h2 id="types-of-loss-functions">Types of Loss Functions</h2>
+<ul>
+<li>
+<p>Mean Squared Error (MSE): MSE calculates the average of the squared differences between the predicted values and the actual values. It is commonly used in linear regression and can be sensitive to outliers that significantly deviate from the model&rsquo;s predictions.
+$$
+\text{MSE} = \frac{1}{n} \sum_{i=1}^n (\hat{y}_i - y_i)^2
+$$
+$y$ represents the actual output values, and $\hat{y}$ represents the predicted values by the model.</p>
+</li>
+<li>
+<p>Mean Absolute Error (MAE): MAE calculates the average of the absolute differences between the predicted values and the actual values. It is less sensitive to outliers and can be useful when considering the model&rsquo;s uncertainty.
+$$
+\text{MAE} = \frac{1}{n} \sum_{i=1}^n |x_i - x|
+$$
+$|x_i - x|$ represents the absolute error.</p>
+</li>
+</ul>
+<h2 id="optimization-algorithms-commonly-used">Optimization Algorithms Commonly Used</h2>
+<ul>
+<li>Stochastic Gradient Descent (SGD): SGD updates the weights by considering only a subset of the data in each learning step. It is fast but can be unstable, making it useful for large datasets.</li>
+<li>Momentum: Momentum incorporates the momentum from previous updates to provide inertia in weight updates. It helps to speed up convergence and escape local minima.</li>
+<li>Adam: Adam combines momentum and adaptive learning rate adjustment to optimize the weights. It performs effectively in various problems by automatically adjusting the learning rate for improved convergence and faster optimization.</li>
+</ul>
+<h2 id="considerations">Considerations</h2>
+<ul>
+<li>Multicollinearity: Strong correlations between input variables can adversely affect the accuracy and interpretability of the model. Variable selection and scaling should be considered to mitigate this issue.</li>
+<li>Outlier handling: Outliers can negatively impact the model&rsquo;s training and prediction. Detecting and handling outliers using techniques such as outlier detection and preprocessing methods like replacing or removing outliers are recommended.</li>
+<li>Overfitting: Overfitting occurs when the model becomes too specific to the training data, resulting in poor generalization to new data. Techniques such as cross-validation can be used to prevent overfitting.</li>
+</ul>
+<p>These are some important points to consider when working with linear regression models.</p>
+
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>Copyright © 2023 by soulsy</article>
+</footer>
+
+</main>
+    </body>
+</html>

@@ -6,7 +6,52 @@
     <description>Recent content in Tags on SamTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linear regression model</title>
+      <link>https://soulsy.github.io/ko/tags/linear-regression-model/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/linear-regression-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning</title>
+      <link>https://soulsy.github.io/ko/tags/machine-learning/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tensorflow</title>
+      <link>https://soulsy.github.io/ko/tags/tensorflow/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/tensorflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>기계 학습</title>
+      <link>https://soulsy.github.io/ko/tags/%EA%B8%B0%EA%B3%84-%ED%95%99%EC%8A%B5/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/%EA%B8%B0%EA%B3%84-%ED%95%99%EC%8A%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>선형 회귀 모델</title>
+      <link>https://soulsy.github.io/ko/tags/%EC%84%A0%ED%98%95-%ED%9A%8C%EA%B7%80-%EB%AA%A8%EB%8D%B8/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/%EC%84%A0%ED%98%95-%ED%9A%8C%EA%B7%80-%EB%AA%A8%EB%8D%B8/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>AI 봇</title>
       <link>https://soulsy.github.io/ko/tags/ai-%EB%B4%87/</link>
@@ -130,24 +175,6 @@
       <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://soulsy.github.io/ko/tags/artificial-intelligence/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>machine learning</title>
-      <link>https://soulsy.github.io/ko/tags/machine-learning/</link>
-      <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://soulsy.github.io/ko/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tensorflow</title>
-      <link>https://soulsy.github.io/ko/tags/tensorflow/</link>
-      <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://soulsy.github.io/ko/tags/tensorflow/</guid>
       <description></description>
     </item>
     

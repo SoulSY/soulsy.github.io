@@ -6,7 +6,34 @@
     <description>Recent content in Tags on SamTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linear regression model</title>
+      <link>https://soulsy.github.io/tags/linear-regression-model/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/tags/linear-regression-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning</title>
+      <link>https://soulsy.github.io/tags/machine-learning/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tensorflow</title>
+      <link>https://soulsy.github.io/tags/tensorflow/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/tags/tensorflow/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>AI Bot</title>
       <link>https://soulsy.github.io/tags/ai-bot/</link>
@@ -121,24 +148,6 @@
       <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://soulsy.github.io/tags/artificial-intelligence/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>machine learning</title>
-      <link>https://soulsy.github.io/tags/machine-learning/</link>
-      <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://soulsy.github.io/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tensorflow</title>
-      <link>https://soulsy.github.io/tags/tensorflow/</link>
-      <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://soulsy.github.io/tags/tensorflow/</guid>
       <description></description>
     </item>
     
