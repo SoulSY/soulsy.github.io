@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Startup on SamTech</title>
+    <link>https://soulsy.github.io/tags/startup/</link>
+    <description>Recent content in Startup on SamTech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/tags/startup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Elon Musk Announces New AI Startup</title>
+      <link>https://soulsy.github.io/news/007/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/news/007/</guid>
+      <description>Elon Musk Announces New AI Startup Source: BBC News - Link to Article by James Clayton
+Tesla CEO Elon Musk has announced the formation of a new artificial intelligence startup named xAI. The company includes engineers who previously worked with AI powerhouses like OpenAI and Google.
+Musk has been vocal about his belief that developments in AI should be paused and the sector needs regulation. He expressed that the startup was created to &amp;ldquo;understand reality&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>
