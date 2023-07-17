@@ -6,7 +6,17 @@
     <description>Recent content in Artificial Intelligence on SamTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 04 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Transformer Models</title>
+      <link>https://soulsy.github.io/knowledge/tensorflow/transformer_models/</link>
+      <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/knowledge/tensorflow/transformer_models/</guid>
+      <description>Transformer Models Transformer models have revolutionized the field of Natural Language Processing (NLP) by introducing a new approach to handling sequence data. Developed by Vaswani et al. in the 2017 paper &amp;ldquo;Attention is All You Need,&amp;rdquo; this architecture relies heavily on self-attention mechanisms to weigh the importance of words in a sequence, thus improving the model&amp;rsquo;s understanding of the context.
+Characteristics Unlike previous sequence handling models like RNNs and LSTMs that process data sequentially, transformers process all the sequence inputs simultaneously.</description>
+    </item>
+    
     <item>
       <title>TensorFlow Overview</title>
       <link>https://soulsy.github.io/knowledge/tensorflow/overview/</link>

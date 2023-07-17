@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://soulsy.github.io/ko/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link
@@ -15,6 +15,71 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://soulsy.github.io/ko/"
+                />
+  </url><url>
+    <loc>https://soulsy.github.io/ko/knowledge/</loc>
+    <lastmod>2023-07-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://soulsy.github.io/knowledge/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://soulsy.github.io/ko/knowledge/"
+                />
+  </url><url>
+    <loc>https://soulsy.github.io/ko/tags/</loc>
+    <lastmod>2023-07-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://soulsy.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://soulsy.github.io/ko/tags/"
+                />
+  </url><url>
+    <loc>https://soulsy.github.io/ko/tags/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/</loc>
+    <lastmod>2023-07-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url><url>
+    <loc>https://soulsy.github.io/ko/tags/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5/</loc>
+    <lastmod>2023-07-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url><url>
+    <loc>https://soulsy.github.io/ko/tags/%ED%85%90%EC%84%9C%ED%94%8C%EB%A1%9C%EC%9A%B0/</loc>
+    <lastmod>2023-07-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url><url>
+    <loc>https://soulsy.github.io/ko/tags/%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A8%B8-%EB%AA%A8%EB%8D%B8/</loc>
+    <lastmod>2023-07-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url><url>
+    <loc>https://soulsy.github.io/ko/knowledge/tensorflow/transformer_models/</loc>
+    <lastmod>2023-07-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://soulsy.github.io/knowledge/tensorflow/transformer_models/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://soulsy.github.io/ko/knowledge/tensorflow/transformer_models/"
                 />
   </url><url>
     <loc>https://soulsy.github.io/ko/news/</loc>
@@ -45,21 +110,6 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://soulsy.github.io/ko/tags/ai/"
-                />
-  </url><url>
-    <loc>https://soulsy.github.io/ko/tags/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://soulsy.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://soulsy.github.io/ko/tags/"
                 />
   </url><url>
     <loc>https://soulsy.github.io/ko/tags/%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EC%A0%84%EB%9E%B5/</loc>
@@ -165,21 +215,6 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://soulsy.github.io/ko/tags/xai/"
-                />
-  </url><url>
-    <loc>https://soulsy.github.io/ko/knowledge/</loc>
-    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://soulsy.github.io/knowledge/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://soulsy.github.io/ko/knowledge/"
                 />
   </url><url>
     <loc>https://soulsy.github.io/ko/tags/linear-regression-model/</loc>
