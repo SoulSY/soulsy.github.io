@@ -18,6 +18,17 @@ CNN의 특성 Convolutional Layer: CNN의 주요 구성 요소로, 입력 데이
     </item>
     
     <item>
+      <title>페이스북, 자사 인공지능 기술 Llama 2 Open Source로 제공</title>
+      <link>https://soulsy.github.io/ko/news/010/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/news/010/</guid>
+      <description>페이스북, 자사 인공지능 기술 Llama 2 Open Source로 제공 출처: Washington Post - 기사 링크 by Gerrit De Vynck, Naomi Nix
+페이스북의 소유사인 메타가 혁신적인 인공지능 기술인 Llama 2를 연구 및 제품 개발을 위해 무료로 공개합니다. 이 &amp;ldquo;오픈 소스&amp;rdquo; 접근 방식은 인공지능 분야에서의 경쟁을 촉진하고 동시에 잠재적인 악용 가능성에 대한 우려를 불러일으킵니다.
+Llama 2는 수많은 인터넷 자료를 기반으로 훈련된 복잡한 알고리즘으로, 메타에서 직접 다운로드하거나 Microsoft, Amazon, AI 스타트업 Hugging Face와 같은 클라우드 공급업체를 통해 무료로 이용할 수 있습니다.</description>
+    </item>
+    
+    <item>
       <title>트랜스포머 모델</title>
       <link>https://soulsy.github.io/ko/knowledge/tensorflow/transformer_models/</link>
       <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>

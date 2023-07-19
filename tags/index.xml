@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>AI</title>
+      <link>https://soulsy.github.io/tags/ai/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>artificial intelligence</title>
       <link>https://soulsy.github.io/tags/artificial-intelligence/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
@@ -35,11 +44,47 @@
     </item>
     
     <item>
+      <title>Facebook</title>
+      <link>https://soulsy.github.io/tags/facebook/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/tags/facebook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Llama 2</title>
+      <link>https://soulsy.github.io/tags/llama-2/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/tags/llama-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>machine learning</title>
       <link>https://soulsy.github.io/tags/machine-learning/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://soulsy.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meta</title>
+      <link>https://soulsy.github.io/tags/meta/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/tags/meta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://soulsy.github.io/tags/open-source/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/tags/open-source/</guid>
       <description></description>
     </item>
     
@@ -247,24 +292,6 @@
       <pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://soulsy.github.io/tags/vulnerability/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Meta</title>
-      <link>https://soulsy.github.io/tags/meta/</link>
-      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://soulsy.github.io/tags/meta/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AI</title>
-      <link>https://soulsy.github.io/tags/ai/</link>
-      <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://soulsy.github.io/tags/ai/</guid>
       <description></description>
     </item>
     
