@@ -6,7 +6,17 @@
     <description>Recent content on SamTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/knowledge/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/knowledge/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Convolutional Neural Networks (CNN)</title>
+      <link>https://soulsy.github.io/knowledge/tensorflow/convolutional_neural_networks/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/knowledge/tensorflow/convolutional_neural_networks/</guid>
+      <description>Convolutional Neural Networks (CNN) Convolutional Neural Networks (CNN) are a type of deep neural network that are particularly successful in processing data with a grid-like topology, such as an image. CNNs exploit spatial correlations within the data by applying a series of filters that create a hierarchical representation of the data, making them extremely efficient at image recognition and other computer vision tasks.
+Characteristics Convolutional Layers: The primary building blocks of CNNs that perform a convolutional operation on the input data.</description>
+    </item>
+    
     <item>
       <title>Transformer Models</title>
       <link>https://soulsy.github.io/knowledge/tensorflow/transformer_models/</link>

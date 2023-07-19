@@ -6,7 +6,52 @@
     <description>Recent content in Tags on SamTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>artificial intelligence</title>
+      <link>https://soulsy.github.io/tags/artificial-intelligence/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/tags/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CNN</title>
+      <link>https://soulsy.github.io/tags/cnn/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/tags/cnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Convolutional Neural Networks</title>
+      <link>https://soulsy.github.io/tags/convolutional-neural-networks/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/tags/convolutional-neural-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning</title>
+      <link>https://soulsy.github.io/tags/machine-learning/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tensorflow</title>
+      <link>https://soulsy.github.io/tags/tensorflow/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/tags/tensorflow/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Digital Trends</title>
       <link>https://soulsy.github.io/tags/digital-trends/</link>
@@ -40,33 +85,6 @@
       <pubDate>Mon, 17 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://soulsy.github.io/tags/twitter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Artificial Intelligence</title>
-      <link>https://soulsy.github.io/tags/artificial-intelligence/</link>
-      <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://soulsy.github.io/tags/artificial-intelligence/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>machine learning</title>
-      <link>https://soulsy.github.io/tags/machine-learning/</link>
-      <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://soulsy.github.io/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tensorflow</title>
-      <link>https://soulsy.github.io/tags/tensorflow/</link>
-      <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://soulsy.github.io/tags/tensorflow/</guid>
       <description></description>
     </item>
     

@@ -6,7 +6,17 @@
     <description>Recent content on SamTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Mon, 17 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Convolutional Neural Networks (CNN)</title>
+      <link>https://soulsy.github.io/ko/knowledge/tensorflow/convolutional_neural_networks/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/knowledge/tensorflow/convolutional_neural_networks/</guid>
+      <description>Convolutional Neural Networks (CNN) Convolutional Neural Networks(CNN)은 이미지와 같이 격자 형태의 구조를 가진 데이터를 처리하는데 특히 뛰어난 성능을 보이는 심층 신경망입니다. CNN은 데이터 내의 공간적 상관관계를 이용하여 일련의 필터를 적용함으로써 데이터의 계층적 표현을 생성하며, 이로 인해 이미지 인식 및 다른 컴퓨터 비전 작업에 매우 효율적입니다.
+CNN의 특성 Convolutional Layer: CNN의 주요 구성 요소로, 입력 데이터에 Convolutional 연산을 수행합니다. 이러한 계층은 데이터에서 저차원 특성을 추출하는 일련의 필터를 적용합니다. Pooling Layers: Convolutional 계층 다음에 자주 사용되며, Convolutional된 특성의 공간적 크기를 줄여 네트워크의 연산 부하를 감소시킵니다.</description>
+    </item>
+    
     <item>
       <title>Threads 사용자 수 급감 추세 드러나</title>
       <link>https://soulsy.github.io/ko/news/009/</link>
