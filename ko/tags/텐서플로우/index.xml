@@ -6,7 +6,18 @@
     <description>Recent content in 텐서플로우 on SamTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/tags/%ED%85%90%EC%84%9C%ED%94%8C%EB%A1%9C%EC%9A%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/tags/%ED%85%90%EC%84%9C%ED%94%8C%EB%A1%9C%EC%9A%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>순환 신경망 (Recurrent Neural Networks, RNN)</title>
+      <link>https://soulsy.github.io/ko/knowledge/tensorflow/recurrent_neural_networks/</link>
+      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/knowledge/tensorflow/recurrent_neural_networks/</guid>
+      <description>순환 신경망 (Recurrent Neural Networks, RNN) 순환 신경망(Recurrent Neural Network, RNN)은 텍스트, 유전자, 필기 또는 음성과 같은 시퀀스 데이터의 패턴을 인식하도록 설계된 인공 신경망의 한 종류입니다. 기존의 신경망과 달리 RNN에는 루프가 있어 시퀀스의 한 단계에서 다음 단계로 정보를 전달할 수 있습니다.
+순환 신경망의 특징 RNN은 숨겨진 상태를 사용해 이전의 입력을 &amp;ldquo;기억&amp;quot;하는 능력으로 알려져 있으며, 이는 시퀀스 데이터를 다루는 작업에 매우 효과적입니다. RNN의 주요 특징은 다음과 같습니다:
+순차적 처리: 다른 유형의 신경망이 각 입력을 독립적으로 처리하는 반면, RNN은 입력을 순차적으로 처리합니다.</description>
+    </item>
+    
     <item>
       <title>Convolutional Neural Networks (CNN)</title>
       <link>https://soulsy.github.io/ko/knowledge/tensorflow/convolutional_neural_networks/</link>

@@ -15,12 +15,13 @@
 
 <!DOCTYPE html>
 <html lang='ko'><head>
-	<meta name="generator" content="Hugo 0.113.0">
     <meta charset="utf-8">
     <link rel="shortcut icon" href='/favicon.ico' type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SamTech</title>
+    <title>순환 신경망 (Recurrent Neural Networks, RNN) - SamTech</title>
 
+    
+    <meta name="description" content="순환 신경망 (Recurrent Neural Networks, RNN)" />
     
 
     
@@ -30,17 +31,19 @@
     
 
     
-        <meta property="og:title" content="" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://soulsy.github.io/ko/" />
+        <meta property="og:title" content="순환 신경망 (Recurrent Neural Networks, RNN)" />
+<meta property="og:description" content="순환 신경망 (Recurrent Neural Networks, RNN)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://soulsy.github.io/ko/knowledge/tensorflow/recurrent_neural_networks/" /><meta property="article:section" content="knowledge" />
+<meta property="article:published_time" content="2023-07-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-22T00:00:00+00:00" />
 
     
 
     
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="순환 신경망 (Recurrent Neural Networks, RNN)"/>
+<meta name="twitter:description" content="순환 신경망 (Recurrent Neural Networks, RNN)"/>
 
     <link rel="stylesheet" href="/style.min.5297c96c59a52afaa5bcda4a6cedf3813081f64025c209b25b2ee6d0c8f74d462b625ad3404a92a14d7a51b4ec0a420337ae70f426fa4bce2d5f7459a3ca7274.css" integrity="sha512-UpfJbFmlKvqlvNpKbO3zgTCB9kAlwgmyWy7m0Mj3TUYrYlrTQEqSoU16UbTsCkIDN65w9Cb6S84tX3RZo8pydA==">
 
@@ -171,7 +174,7 @@ if (!doNotTrack) {
                     
                         <a href="/ko/dev/" class="pure-menu-link">Dev</a>
                     
-                </li><li class="navbar-item pure-menu-item ">
+                </li><li class="navbar-item pure-menu-item insection">
                     
                         <a href="/ko/knowledge/" class="pure-menu-link">Knowledge</a>
                     
@@ -190,93 +193,94 @@ if (!doNotTrack) {
                 </li></ul>
 </div><div id="content" class="content-margin">
                 
-
-
-
-
-
-
-<div class="postcard-layout content-margin">
     
-        <a href="https://soulsy.github.io/ko/dev/design_pattern/factory_pattern/">
-            <div class="postcard-item">
-                <div class="postcard-title">
-                    <span>디자인 패턴 01. Factory Pattern</span>
-                </div>
-                <div class="postcard-summary">
-                    <span>Factory 패턴은 객체 생성을 캡슐화하여 유연성과 확장성을 제공하는 디자인 패턴입니다. 이 패턴은 클라이언트에게 직접 객체 생성을 맡기지 않고, 팩토리 메서드를 통해 객체를 생성하고 반환하는 방식을 사용합니다.
-Factory 패턴의 개요 Factory 패턴은 클라이언트가 객체를 생성하는 대신, 팩토리 메서드를 호출하여 객체를 생성하고 반환합니다. 이를 통해 클라이언트는 객체 생성과 관련된 복잡한 로직을 알 필요 없이, 팩토리 메서드를 통해 쉽게 객체를 생성할 수 있습니다.
-// 동물 인터페이스 public interface Animal { void makeSound(); } // 고양이 클래스 public class Cat implements Animal { @Override public void makeSound() { System.</span>
-                </div>
-                <div class="postcard-metadata">
-                    <span>2023/06/15 · 
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#순환-신경망의-특징">순환 신경망의 특징</a></li>
+    <li><a href="#rnn-기본-개념">RNN 기본 개념</a></li>
+    <li><a href="#rnn의-유형">RNN의 유형</a></li>
+    <li><a href="#손실-함수와-최적화">손실 함수와 최적화</a></li>
+    <li><a href="#rnn을-적용한-분야">RNN을 적용한 분야</a></li>
+    <li><a href="#rnn을-사용할-때-고려해야-할-부분">RNN을 사용할 때 고려해야 할 부분</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+<article >
+    
     
         
-    
-
-    
-        
-            <span></span>
         
     
-</span>
-                </div>
-            </div>
-        </a>
-    
-        <a href="https://soulsy.github.io/ko/about/">
-            <div class="postcard-item">
-                <div class="postcard-title">
-                    <span>About</span>
-                </div>
-                <div class="postcard-summary">
-                    <span>삼테크에 오신 것을 환영합니다. 삼테크는 다양한 주제를 다루며 기술에 대한 토론을 진행하는 곳입니다. 삼테크라는 이름에 걸맞게 세 가지 주요 분야(News, Development, Knowledge)에 대해 다룹니다.
-삼테크는 보안 관련 주제도 다루지만, 주로 다양한 기술, 개발 및 IT 동향에 초점을 맞추고 있습니다. 우리는 기술 열정을 자유롭게 탐구하고 공유할 수 있는 플랫폼을 제공합니다. 함께 학습하고 정보를 교류하는 이 여정에 참여해보세요.</span>
-                </div>
-                <div class="postcard-metadata">
-                    <span>2023/06/14 · 
-    
+    <h1 id="순환-신경망-recurrent-neural-networks-rnn">순환 신경망 (Recurrent Neural Networks, RNN)</h1>
+<p>순환 신경망(Recurrent Neural Network, RNN)은 텍스트, 유전자, 필기 또는 음성과 같은 시퀀스 데이터의 패턴을 인식하도록 설계된 인공 신경망의 한 종류입니다. 기존의 신경망과 달리 RNN에는 루프가 있어 시퀀스의 한 단계에서 다음 단계로 정보를 전달할 수 있습니다.</p>
+<h2 id="순환-신경망의-특징">순환 신경망의 특징</h2>
+<p>RNN은 숨겨진 상태를 사용해 이전의 입력을 &ldquo;기억&quot;하는 능력으로 알려져 있으며, 이는 시퀀스 데이터를 다루는 작업에 매우 효과적입니다. RNN의 주요 특징은 다음과 같습니다:</p>
+<ul>
+<li>
+<p><strong>순차적 처리</strong>: 다른 유형의 신경망이 각 입력을 독립적으로 처리하는 반면, RNN은 입력을 순차적으로 처리합니다. 이 특성 덕분에 시퀀스 예측 문제를 효과적으로 처리할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>시간 단계에 걸친 파라미터 공유</strong>: RNN에서는 순환 은닉 레이어의 가중치가 시간 단계에 걸쳐 공유됩니다. 이 특성은 모델의 파라미터 수를 크게 줄이고, 서로 다른 길이의 시퀀스에 걸쳐 일반화할 수 있는 능력을 제공합니다.</p>
+</li>
+</ul>
+<h2 id="rnn-기본-개념">RNN 기본 개념</h2>
+<p>RNN은 시퀀스를 처리하기 위해 시퀀스 요소를 반복하고 지금까지 본 정보를 포함하는 &lsquo;상태&rsquo;를 유지합니다. 본질적으로, RNN에는 계산된 정보에 대한 정보를 포착하는 &lsquo;메모리&rsquo;가 있습니다. RNN의 핵심 요소는 시퀀스에 대한 정보를 포착하는 숨겨진 상태입니다. RNN의 공식은 다음과 같습니다:</p>
+<p>$h_t = f(W_{hh}h_{t-1} + W_{xh}x_t)$</p>
+<p>여기서 $h_t$는 시간 $t$에서의 숨겨진 상태이고, $f$는 활성화 함수 (일반적으로 tanh 또는 ReLU), $W_{hh}$는 숨겨진 상태에서의 가중치 행렬, $W_{xh}$는 입력에서 숨겨진 가중치 행렬, 그리고 $x_t$는 시간 $t$에서의 입력입니다.</p>
+<h2 id="rnn의-유형">RNN의 유형</h2>
+<p>다양한 문제를 해결하기 위해 제안된 여러 유형의 RNN이 있습니다:</p>
+<ol>
+<li>
+<p><strong>Simple RNN (SRNN)</strong>: 이것은 가장 기본적인 형태의 RNN입니다. 각 시간 단계에서 현재의 입력과 이전의 숨겨진 상태를 사용하여 새로운 숨겨진 상태를 계산합니다. 그러나 이러한 단순한 RNN에는 &ldquo;장기 종속성&quot;이라는 문제가 있어, 시간이 지남에 따라 시퀀스 초기의 정보가 희석되는 문제가 있습니다.</p>
+</li>
+<li>
+<p><strong>Long Short-Term Memory (LSTM)</strong>: LSTM은 SRNN의 장기 종속성 문제를 해결하려고 설계되었습니다. 그들은 셀 상태와 게이트의 개념을 도입하여 정보를 더 잘 유지하고 관리할 수 있습니다. LSTM의 업데이트 공식은 다음과 같습니다:</p>
+<ul>
+<li>Forget 게이트: $f_t = \sigma(W_f \cdot [h_{t-1}, x_t] + b_f)$</li>
+<li>Input 게이트: $i_t = \sigma(W_i \cdot [h_{t-1}, x_t] + b_i)$</li>
+<li>Cell 상태: $\tilde{C}<em>t = \tanh(W_C \cdot [h</em>{t-1}, x_t] + b_C)$</li>
+<li>Final 셀 상태: $C_t = f_t * C_{t-1} + i_t * \tilde{C}_t$</li>
+<li>Output 게이트: $o_t = \sigma(W_o \cdot [h_{t-1}, x_t] + b_o)$</li>
+<li>Hidden 상태: $h_t = o_t * \tanh(C_t)$</li>
+</ul>
+</li>
+<li>
+<p><strong>Gated Recurrent Unit (GRU)</strong>: GRU는 셀 상태와 숨겨진 상태를 하나로 합쳐 LSTM을 간소화한 버전입니다. 또한 LSTM의 세 가지 게이트를 두 가지로 줄여 계산 요구사항을 줄입니다. GRU의 업데이트 공식은 다음과 같습니다:</p>
+<ul>
+<li>Update 게이트: $z_t = \sigma(W_z \cdot [h_{t-1}, x_t] + b_z)$</li>
+<li>Reset 게이트: $r_t = \sigma(W_r \cdot [h_{t-1}, x_t] + b_r)$</li>
+<li>Candidate Hidden 상태: $\tilde{h}<em>t = \tanh(W \cdot [r_t * h</em>{t-1}, x_t] + b)$</li>
+<li>Hidden 상태: $h_t = (1 - z_t) * h_{t-1} + z_t * \tilde{h}_t$</li>
+</ul>
+</li>
+</ol>
+<p>이 식에서 $\sigma$는 시그모이드 함수, $\tanh$는 쌍곡 탄젠트 함수를 나타내며, $*$는 원소별 곱셈을 나타냅니다.</p>
+<h2 id="손실-함수와-최적화">손실 함수와 최적화</h2>
+<p>일반적으로, 분류 작업을 위한 RNN 훈련에는 교차 엔트로피 손실 함수가 사용되며, 회귀 작업에는 평균 제곱 오차 (MSE)가 사용됩니다. 최적화에 대해 말하자면, 확률적 경사 하강법 (SGD)과 RMSprop, Adam과 같은 변형이 일반적으로 사용됩니다. SGD의 업데이트 규칙은 다음과 같이 정의됩니다:</p>
+<p>$$
+W = W - \eta \frac{\partial L}{\partial W}
+$$</p>
+<p>여기서 $W$는 네트워크의 가중치를, $\eta$는 학습률을, $L$는 손실 함수를 나타내며, $\frac{\partial L}{\partial W}$는 가중치에 대한 손실 함수의 기울기입니다.</p>
+<h2 id="rnn을-적용한-분야">RNN을 적용한 분야</h2>
+<p>RNN은 다양한 응용 분야를 가지고 있습니다. 언어 모델링과 생성, 기계 번역, 음성 인식 등에 사용됩니다.</p>
+<h2 id="rnn을-사용할-때-고려해야-할-부분">RNN을 사용할 때 고려해야 할 부분</h2>
+<ul>
+<li><strong>기울기 소실 및 폭발 문제</strong>: RNN은 기울기 소실과 폭발 문제에 취약하므로, 긴 시퀀스를 학습하는 것이 어렵습니다.</li>
+<li><strong>장기 종속성</strong>: RNN은 너무 멀리 떨어진 이전 단계와 현재 단계 사이의 정보를 연결하는 것을 배우는데 어려움을 겪을 수 있습니다. 이를 장기 종속성 문제라고 합니다.</li>
+<li><strong>훈련 시간</strong>: RNN은 그들의 순환적인 특성으로 인해 학습이 느릴 수 있으며, 이는 시간 단계에 걸친 병렬화를 방해합니다.</li>
+</ul>
+<p>언어 모델링, 기계 번역, 음성 인식 등의 작업에 대한 시퀀스 데이터 처리 능력으로 인해 순환 신경망은 딥 러닝 분야에서 중요한 도구입니다. 인식해야 할 몇 가지 도전이 있지만, 그들의 잠재력은 그들을 AI 도구 상자에서 강력한 도구로 만듭니다.</p>
 
-    
-</span>
-                </div>
-            </div>
-        </a>
-    
-    
-    <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="/ko/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/ko/page/4/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/ko/" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/ko/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/ko/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
-      </li>
-      <li class="page-item">
-        <a href="/ko/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 5" class="page-link" role="button">5</a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
+</article>
 </div>
-
-
-
 
 
                 
