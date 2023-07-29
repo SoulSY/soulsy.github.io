@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://soulsy.github.io/ko/</loc>
-    <lastmod>2023-07-25T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link
@@ -18,7 +18,7 @@
                 />
   </url><url>
     <loc>https://soulsy.github.io/ko/news/</loc>
-    <lastmod>2023-07-25T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link
@@ -30,6 +30,111 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://soulsy.github.io/ko/news/"
+                />
+  </url><url>
+    <loc>https://soulsy.github.io/ko/tags/cve-2023-2640/</loc>
+    <lastmod>2023-07-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://soulsy.github.io/tags/cve-2023-2640/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://soulsy.github.io/ko/tags/cve-2023-2640/"
+                />
+  </url><url>
+    <loc>https://soulsy.github.io/ko/tags/cve-2023-32629/</loc>
+    <lastmod>2023-07-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://soulsy.github.io/tags/cve-2023-32629/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://soulsy.github.io/ko/tags/cve-2023-32629/"
+                />
+  </url><url>
+    <loc>https://soulsy.github.io/ko/news/013/</loc>
+    <lastmod>2023-07-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://soulsy.github.io/news/013/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://soulsy.github.io/ko/news/013/"
+                />
+  </url><url>
+    <loc>https://soulsy.github.io/ko/tags/gameoverlay/</loc>
+    <lastmod>2023-07-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://soulsy.github.io/tags/gameoverlay/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://soulsy.github.io/ko/tags/gameoverlay/"
+                />
+  </url><url>
+    <loc>https://soulsy.github.io/ko/tags/linux/</loc>
+    <lastmod>2023-07-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://soulsy.github.io/tags/linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://soulsy.github.io/ko/tags/linux/"
+                />
+  </url><url>
+    <loc>https://soulsy.github.io/ko/tags/</loc>
+    <lastmod>2023-07-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://soulsy.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://soulsy.github.io/ko/tags/"
+                />
+  </url><url>
+    <loc>https://soulsy.github.io/ko/tags/vulnerability/</loc>
+    <lastmod>2023-07-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://soulsy.github.io/tags/vulnerability/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://soulsy.github.io/ko/tags/vulnerability/"
                 />
   </url><url>
     <loc>https://soulsy.github.io/ko/news/012/</loc>
@@ -45,21 +150,6 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://soulsy.github.io/ko/news/012/"
-                />
-  </url><url>
-    <loc>https://soulsy.github.io/ko/tags/</loc>
-    <lastmod>2023-07-25T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://soulsy.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://soulsy.github.io/ko/tags/"
                 />
   </url><url>
     <loc>https://soulsy.github.io/ko/tags/%EB%A1%9C%EA%B3%A0-%EB%B3%80%EA%B2%BD/</loc>
@@ -625,21 +715,6 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://soulsy.github.io/ko/tags/stackrot/"
-                />
-  </url><url>
-    <loc>https://soulsy.github.io/ko/tags/vulnerability/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://soulsy.github.io/tags/vulnerability/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://soulsy.github.io/ko/tags/vulnerability/"
                 />
   </url><url>
     <loc>https://soulsy.github.io/ko/news/005/</loc>

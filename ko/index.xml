@@ -6,7 +6,20 @@
     <description>Recent content on SamTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 25 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GameOver(lay): 2가지 리눅스 취약점이 40% 우분투 사용자들에게 미치는 위험</title>
+      <link>https://soulsy.github.io/ko/news/013/</link>
+      <pubDate>Sat, 29 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/news/013/</guid>
+      <description>GameOver(lay): 2가지 리눅스 취약점이 40% 우분투 사용자들에게 미치는 위험 출처: Hacker News - 기사 링크
+최근 보안 연구자들이 우분투 리눅스 커널에서 공격자가 시스템 권한을 높일 수 있는 심각한 취약점 두 개를 찾아냈습니다.
+CVE-2023-2640과 CVE-2023-32629로 분류된 이 취약점은 우분투가 사용하는 오버레이 파일 시스템(OverlayFS) 모듈에서 발생했습니다.
+연구자들은 이 취약점을 **GameOver(lay)**라 이름 붙였는데, 특정 상황에서 적절한 권한 체크가 누락되어 있어 로컬 공격자가 시스템 권한을 상승시킬 수 있다는 것이 핵심입니다.
+현재 클라우드 환경에서 널리 쓰이는 우분투 버전의 40% 정도가 이 취약점의 영향을 받을 수 있다고 합니다.</description>
+    </item>
+    
     <item>
       <title>Elon Musk의 Twitter 로고 변경, 성공적일까?</title>
       <link>https://soulsy.github.io/ko/news/012/</link>
