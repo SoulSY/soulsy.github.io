@@ -6,7 +6,17 @@
     <description>Recent content in tensorflow on SamTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Wed, 12 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>생성적 적대 신경망(Generative Adversarial Networks, GANs)</title>
+      <link>https://soulsy.github.io/ko/knowledge/tensorflow/generative_adversarial_networks/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/knowledge/tensorflow/generative_adversarial_networks/</guid>
+      <description>생성적 적대 신경망 (Generative Adversarial Networks, GANs) 생성적 적대 신경망(GANs)은 두 개의 신경망이 서로 경쟁하는 형태로 작동합니다. 이 구조는 딥러닝에서 복잡한 패턴의 생성이 가능하게 만들었으며, 다양한 응용 분야에서 중요한 역할을 하고 있습니다.
+GANs 특징 GAN은 생성자와 판별자로 이루어진 두 신경망이 서로 경쟁하며 학습하는 구조로, 복잡한 데이터를 생성할 수 있습니다. 그러나 학습은 균형이 매우 중요하고 민감하여 어려울 수 있습니다. 이러한 특성에 따라 다양한 변형이 개발되고 있으며, 이미지 생성, 스타일 변환 등 다양한 분야에서 활용되고 있습니다.</description>
+    </item>
+    
     <item>
       <title>선형 회귀 모델</title>
       <link>https://soulsy.github.io/ko/knowledge/tensorflow/linear_regression_model/</link>

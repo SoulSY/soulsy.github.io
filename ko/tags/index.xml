@@ -6,7 +6,52 @@
     <description>Recent content in Tags on SamTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Sat, 29 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>artificial intelligence</title>
+      <link>https://soulsy.github.io/ko/tags/artificial-intelligence/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GANs</title>
+      <link>https://soulsy.github.io/ko/tags/gans/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/gans/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generative Adversarial Networks</title>
+      <link>https://soulsy.github.io/ko/tags/generative-adversarial-networks/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/generative-adversarial-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning</title>
+      <link>https://soulsy.github.io/ko/tags/machine-learning/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tensorflow</title>
+      <link>https://soulsy.github.io/ko/tags/tensorflow/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/tensorflow/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>CVE-2023-2640</title>
       <link>https://soulsy.github.io/ko/tags/cve-2023-2640/</link>
@@ -359,24 +404,6 @@
     </item>
     
     <item>
-      <title>machine learning</title>
-      <link>https://soulsy.github.io/ko/tags/machine-learning/</link>
-      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://soulsy.github.io/ko/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tensorflow</title>
-      <link>https://soulsy.github.io/ko/tags/tensorflow/</link>
-      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://soulsy.github.io/ko/tags/tensorflow/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>기계 학습</title>
       <link>https://soulsy.github.io/ko/tags/%EA%B8%B0%EA%B3%84-%ED%95%99%EC%8A%B5/</link>
       <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
@@ -481,15 +508,6 @@
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://soulsy.github.io/ko/tags/twitter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Artificial Intelligence</title>
-      <link>https://soulsy.github.io/ko/tags/artificial-intelligence/</link>
-      <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://soulsy.github.io/ko/tags/artificial-intelligence/</guid>
       <description></description>
     </item>
     
