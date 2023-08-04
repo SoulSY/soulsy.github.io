@@ -6,7 +6,61 @@
     <description>Recent content in Tags on SamTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>순환 신경망 (RNN)</title>
+      <link>https://soulsy.github.io/ko/tags/%EC%88%9C%ED%99%98-%EC%8B%A0%EA%B2%BD%EB%A7%9D-rnn/</link>
+      <pubDate>Thu, 03 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/%EC%88%9C%ED%99%98-%EC%8B%A0%EA%B2%BD%EB%A7%9D-rnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>시계열 분석</title>
+      <link>https://soulsy.github.io/ko/tags/%EC%8B%9C%EA%B3%84%EC%97%B4-%EB%B6%84%EC%84%9D/</link>
+      <pubDate>Thu, 03 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/%EC%8B%9C%EA%B3%84%EC%97%B4-%EB%B6%84%EC%84%9D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>음성 인식</title>
+      <link>https://soulsy.github.io/ko/tags/%EC%9D%8C%EC%84%B1-%EC%9D%B8%EC%8B%9D/</link>
+      <pubDate>Thu, 03 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/%EC%9D%8C%EC%84%B1-%EC%9D%B8%EC%8B%9D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>자연어 처리 (NLP)</title>
+      <link>https://soulsy.github.io/ko/tags/%EC%9E%90%EC%97%B0%EC%96%B4-%EC%B2%98%EB%A6%AC-nlp/</link>
+      <pubDate>Thu, 03 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/%EC%9E%90%EC%97%B0%EC%96%B4-%EC%B2%98%EB%A6%AC-nlp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>장기 의존성 학습</title>
+      <link>https://soulsy.github.io/ko/tags/%EC%9E%A5%EA%B8%B0-%EC%9D%98%EC%A1%B4%EC%84%B1-%ED%95%99%EC%8A%B5/</link>
+      <pubDate>Thu, 03 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/%EC%9E%A5%EA%B8%B0-%EC%9D%98%EC%A1%B4%EC%84%B1-%ED%95%99%EC%8A%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>장단기 기억 네트워크 (LSTM)</title>
+      <link>https://soulsy.github.io/ko/tags/%EC%9E%A5%EB%8B%A8%EA%B8%B0-%EA%B8%B0%EC%96%B5-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-lstm/</link>
+      <pubDate>Thu, 03 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/tags/%EC%9E%A5%EB%8B%A8%EA%B8%B0-%EA%B8%B0%EC%96%B5-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-lstm/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>artificial intelligence</title>
       <link>https://soulsy.github.io/ko/tags/artificial-intelligence/</link>

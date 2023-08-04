@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>자연어 처리 (NLP) on SamTech</title>
+    <link>https://soulsy.github.io/ko/tags/%EC%9E%90%EC%97%B0%EC%96%B4-%EC%B2%98%EB%A6%AC-nlp/</link>
+    <description>Recent content in 자연어 처리 (NLP) on SamTech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Thu, 03 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soulsy.github.io/ko/tags/%EC%9E%90%EC%97%B0%EC%96%B4-%EC%B2%98%EB%A6%AC-nlp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LSTM (Long Short-Term Memory) 이해하기: 시계열 분석, 자연어 처리에 사용되는 딥러닝 기술</title>
+      <link>https://soulsy.github.io/ko/knowledge/tensorflow/long_short-term_memory/</link>
+      <pubDate>Thu, 03 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soulsy.github.io/ko/knowledge/tensorflow/long_short-term_memory/</guid>
+      <description>LSTM (Long Short-Term Memory) 이해하기: 시계열 분석, 자연어 처리에 사용되는 딥러닝 기술 장단기 기억 네트워크 (Long Short-Term Memory, LSTM)는 순환 신경망의 한 유형으로 시계열 데이터 분석, 자연어 처리 (NLP), 음성 인식과 같은 복잡한 작업에 사용됩니다. LSTM의 중요한 특징 중 하나는 장기 패턴을 학습하는 능력으로, 이로 인해 다양한 응용 분야에서 중요한 역할을 수행합니다.
+LSTM의 작동 원리 LSTM은 세 개의 주요 게이트로 구성됩니다: 입력 게이트, 출력 게이트, 망각 게이트. 이 게이트들은 정보가 LSTM 셀 내부에서 어떻게 처리되고 저장되는지 제어합니다.</description>
+    </item>
+    
+  </channel>
+</rss>

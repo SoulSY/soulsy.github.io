@@ -195,6 +195,31 @@ if (!doNotTrack) {
 
 <div class="postcard-layout content-margin">
     
+        <a href="https://soulsy.github.io/ko/dev/design_pattern/prototype_pattern/">
+            <div class="postcard-item">
+                <div class="postcard-title">
+                    <span>디자인 패턴 05. Prototype Pattern</span>
+                </div>
+                <div class="postcard-summary">
+                    <span>Prototype 패턴 개요 Prototype 패턴은 객체 생성 비용을 줄이고, 새로운 객체를 생성하기 위해 기존 객체를 복제하는 디자인 패턴입니다. Prototype 패턴은 다음과 요소를 가지고 있습니다:
+Prototype 인터페이스 또는 추상 클래스: 복제 기능을 선언하는 메서드를 정의합니다. ConcretePrototype 클래스: Prototype 인터페이스를 구체적으로 구현하고, 객체의 복제를 수행하는 메서드를 제공합니다. Client: 복제를 요청하고, 새로운 객체를 생성하는 역할을 합니다. // Prototype 인터페이스 public interface Prototype { Prototype clone(); } // ConcretePrototype 클래스 public class ConcretePrototype implements Prototype { private String property; public ConcretePrototype(String property) { this.</span>
+                </div>
+                <div class="postcard-metadata">
+                    <span>2023/06/20 · 
+    
+        
+    
+
+    
+        
+            <span></span>
+        
+    
+</span>
+                </div>
+            </div>
+        </a>
+    
         <a href="https://soulsy.github.io/ko/dev/design_pattern/builder_pattern/">
             <div class="postcard-item">
                 <div class="postcard-title">
@@ -299,25 +324,6 @@ Factory 패턴의 개요 Factory 패턴은 클라이언트가 객체를 생성�
             </div>
         </a>
     
-        <a href="https://soulsy.github.io/ko/about/">
-            <div class="postcard-item">
-                <div class="postcard-title">
-                    <span>About</span>
-                </div>
-                <div class="postcard-summary">
-                    <span>삼테크에 오신 것을 환영합니다. 삼테크는 다양한 주제를 다루며 기술에 대한 토론을 진행하는 곳입니다. 삼테크라는 이름에 걸맞게 세 가지 주요 분야(News, Development, Knowledge)에 대해 다룹니다.
-삼테크는 보안 관련 주제도 다루지만, 주로 다양한 기술, 개발 및 IT 동향에 초점을 맞추고 있습니다. 우리는 기술 열정을 자유롭게 탐구하고 공유할 수 있는 플랫폼을 제공합니다. 함께 학습하고 정보를 교류하는 이 여정에 참여해보세요.</span>
-                </div>
-                <div class="postcard-metadata">
-                    <span>2023/06/14 · 
-    
-
-    
-</span>
-                </div>
-            </div>
-        </a>
-    
     
     <ul class="pagination pagination-default">
       <li class="page-item">
@@ -325,9 +331,6 @@ Factory 패턴의 개요 Factory 패턴은 클라이언트가 객체를 생성�
       </li>
       <li class="page-item">
         <a href="/ko/page/4/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/ko/" aria-label="Page 1" class="page-link" role="button">1</a>
       </li>
       <li class="page-item">
         <a href="/ko/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
@@ -341,11 +344,14 @@ Factory 패턴의 개요 Factory 패턴은 클라이언트가 객체를 생성�
       <li class="page-item active">
         <a aria-current="page" aria-label="Page 5" class="page-link" role="button">5</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      <li class="page-item">
+        <a href="/ko/page/6/" aria-label="Page 6" class="page-link" role="button">6</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      <li class="page-item">
+        <a href="/ko/page/6/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/ko/page/6/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
 </div>
